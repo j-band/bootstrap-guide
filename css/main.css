@@ -1,0 +1,33 @@
+
+.background {
+    height: 100vh;
+    background-color: #929292;
+    background-image: -webkit-linear-gradient(180deg, #929292 25%, #000000 100%);
+    background-image: -moz-linear-gradient(180deg, #929292 25%, #000000 100%);
+    background-image: -o-linear-gradient(180deg, #929292 25%, #000000 100%);
+    background-image: linear-gradient(180deg, #929292 25%, #000000 100%);
+    background-repeat: no-repeat;
+}
+.headline-center{
+    margin-top: 6%;
+}
+
+.header-boot {
+    font-size: 100px;
+    font-family: GREY, serif;
+    letter-spacing: 5px;
+}
+
+.font-heading {
+    font-family: Archivo, sans-serif;
+    font-size: 30px;
+}
+
+.polygon img {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    height: 400px;
+    width: auto;
+}
