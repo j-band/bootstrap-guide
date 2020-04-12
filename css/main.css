@@ -1,4 +1,17 @@
-
+@font-face {
+    font-family: Archivo; /* Имя шрифта */
+    src: url('./fonts/Archivo-Regular.ttf');
+    url('./fonts/Archivo-Bold.ttf')  format('truetype'),
+    url('./fonts/Archivo-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: GREY; /* Имя шрифта */
+    src: url('./fonts/GREY.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 .background {
     height: 100vh;
     background-color: #929292;
@@ -8,18 +21,19 @@
     background-image: linear-gradient(180deg, #929292 25%, #000000 100%);
     background-repeat: no-repeat;
 }
-.headline-center{
+
+.headline-center {
     margin-top: 6%;
 }
 
 .header-boot {
     font-size: 100px;
-    font-family: GREY, serif;
+    font-family: "GREY", serif;
     letter-spacing: 5px;
 }
 
 .font-heading {
-    font-family: Archivo, sans-serif;
+    font-family: "Archivo", sans-serif;
     font-size: 30px;
 }
 
