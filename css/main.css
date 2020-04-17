@@ -12,6 +12,11 @@
     font-weight: normal;
     font-style: normal;
 }
+
+a, a:hover {
+    text-decoration: none;
+}
+
 .background {
     height: 100vh;
     background-color: #929292;
@@ -44,4 +49,36 @@
     top: 50%;
     height: 400px;
     width: auto;
+}
+
+.step {
+    width: 300px;
+    border-bottom: 2px solid white;
+    font-weight: normal;
+    padding-bottom: 5px;
+}
+
+.step:hover  {
+    text-decoration: none;
+    color: grey;
+    border-bottom: 2px solid grey;
+    transition: 0.2s;
+}
+
+.steps {
+    position: absolute;
+    top: 78vh;
+}
+
+.to-result a span {
+    display: inline-block;
+}
+
+.size {
+    font-size: 12pt;
+}
+
+.checkmark{
+    width: 40px;
+    height: 40px;
 }
