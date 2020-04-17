@@ -46,7 +46,7 @@ a, a:hover {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 50%;
+    top: 46%;
     height: 400px;
     width: auto;
 }
@@ -81,4 +81,9 @@ a, a:hover {
 .checkmark{
     width: 40px;
     height: 40px;
+}
+
+
+.checkmark:hover  {
+    content: url("../img/Group.svg");
 }
