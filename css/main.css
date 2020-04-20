@@ -31,3 +31,17 @@
     height: 400px;
     width: auto;
 }
+
+body {
+    background-color: black !important;
+}
+
+
+
+.size{
+     height: 10vh;
+}
+
+.headline {
+    font-size: 24pt;
+}
