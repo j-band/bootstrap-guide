@@ -2,38 +2,188 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/main.css" rel="stylesheet">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bootstrap</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+            integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+            crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+            integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+            crossorigin="anonymous"></script>
 
 </head>
 <body>
-<div class="background">
-    <nav class="navbar navbar-main navbar-expand-sm">
-        <div class="container-fluid">
-            <div class="row justify-content-sm-start">
-                <a class="navbar-expand-sm" href="#">
-                    <img src="./img/logo.png" width="30" height="50" alt="">
-                </a>
-            </div>
-        </div>
-    </nav>
 
-<div class="polygon">
-    <img src="img/polygon.png">
-</div>
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
-        <div class="col-md-6 p-lg-6 mx-auto my-6 headline-center">
-                <h1 class="font-weight-normal header-boot text-white">Bootstrap</h1>
-            <div class="font-heading">
-                <h2 class="lead font-weight-normal text-white">Как создать адаптивный сайт с помощью bootstrap</h2>
-                <h2 class="lead font-weight-normal text-white">Руководство для самых маленьких</h2>
+
+<div class="background">
+
+
+
+    <div class="navbar justify-content-lg-between">
+        <div class="container-fluid ">
+            <div class="row col-12">
+                <div class="col-11">
+                 <a href="#">
+                     <img src="./img/logo.png" width="30" height="50" alt="">
+                 </a>
+                </div>
+                <div class="col-1">
+                <button type="button" class="btn btn-link navbar-toggle collapsed " data-toggle="modal"
+                        data-target="#menuModal">
+                    <i class="fa fa-bars bars" ></i>
+                </button>
+                </div>
+                <!-- FULLSCREEN MODAL CODE (.fullscreen) -->
+                <div class="modal fade fullscreen" id="menuModal" tabindex="-1" role="dialog"
+                     aria-labelledby="myModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content" style="color:black;">
+                            <div class="modal-header" style="">
+                                <button type="button" class="close btn btn-link" data-dismiss="modal"
+                                        aria-hidden="true">
+                                    <i class="fa fa-times" style="color:black;"></i>
+                                </button>
+                            </div>
+
+                            <div class="modal-body mt-5">
+                                <div class="col-12 p-0 m-0 row text-center">
+                                    <div class="col-12">
+                                         <a href="#">
+                                             <img class="logo-menu" src="img/logo-menu.svg" alt="logo">
+                                            <p class="text-dark font-weight-bold"> Главная </p>
+                                         </a>
+                                    </div>
+                                    <div class=" col-12 m-0 p-0">
+
+                                        <ul class="col-12 row p-0 m-0 pl-4 pr-4 justify-content-around">
+                                            <li class="col-3 list-group text-left menu-item">
+                                                <a class="text-dark font-weight-bold m-4" href="#">
+                                                    Шаг 1. Настройка и обзор
+                                                </a>
+                                                <ol class="menu-list">
+                                                    <li><a class="text-dark" href="#">Создание страницы HTML</a></li>
+                                                    <li><a class="text-dark" href="#">Загрузите Bootstrap </a></li>
+                                                    <li><a class="text-dark" href="#"> Включить JQuery</a></li>
+                                                    <li><a class="text-dark" href="#">Загрузить Bootstrap JavaScript </a>
+                                                    </li>
+                                                    <li><a class="text-dark" href="#">Сложите все это вместе</a></li>
+                                                </ol>
+                                            </li>
+                                            <li class="col-3 list-group text-left menu-item">
+                                                <a class="text-dark font-weight-bold m-4" href="#">
+                                                    Шаг 2. Создание лендинга
+                                                </a>
+
+                                                <ol class="menu-list">
+                                                    <li><a class="text-dark " href="#">Добавить панель навигации </a></li>
+                                                    <li><a class="text-dark" href="#"> Подключение стилей</a>
+                                                    </li>
+                                                    <li><a class="text-dark" href="#"> Содержимое
+                                                        страницы </a></li>
+                                                    <li><a class="text-dark" href="#">Фон и JavaScript</a></li>
+                                                    <li><a class="text-dark" href="#">Добавление наложения</a></li>
+                                                    <li><a class="text-dark" href="#">Включение заголовка страницы
+                                                        и основного текста </a></li>
+                                                </ol>
+                                            </li>
+                                            <li class="col-3 list-group text-left menu-item">
+                                                <a class="text-dark font-weight-bold m-4" href="#">
+                                                    Шаг 3. Завершение работы
+                                                </a>
+                                                <ol class="menu-list">
+                                                    <li><a class="text-dark" href="#"> Создание кнопки CTA </a></li>
+                                                    <li><a class="text-dark" href="#"> Установление раздела </a></li>
+                                                    <li><a class="text-dark" href="#"> Добавление контактной формы </a></li>
+                                                    <li><a class="text-dark" href="#"> Создание нижнего колонтитула </a></li>
+                                                    <li><a class="text-dark" href="#"> Добавление медиа-запросов </a></li>
+                                                    <li><a class="text-dark" href="#"> Получение вашего сайта в прямом
+                                                        эфире</a></li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div>
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.fullscreen -->
+
+
             </div>
         </div>
     </div>
+
+    <div class="polygon">
+        <a href="#"><img src="./img/polygon.png" alt=""></a>
+    </div>
+    <div class="position-relative mb-5 mt-lg-0 overflow-hidden p-3 p-md-5 m-md-3 text-center">
+        <div class="col-md-6 p-lg-6 mx-auto my-5 headline-center">
+            <h1 class="font-weight-normal header-boot text-white row justify-content-center">Bootstrap</h1>
+
+            <div class="font-heading">
+                <h2 class="lead font-weight-normal text-white row justify-content-center">
+                    Как создать адаптивный сайт с помощью bootstrap
+                </h2>
+                <h2 class="lead font-weight-normal text-white row justify-content-center">
+                    Руководство для самых маленьких
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5 steps align-baseline col-lg-12 justify-content-end ">
+        <div class="to-result col-lg-3 ">
+            <a class="text-secondary size " href="#">
+                <img src="img/Group%203.svg" alt="check mark" class="checkmark mb-4">
+                <span class="mt-3 m-2 ">Перейти к <br>результату</span>
+            </a>
+        </div>
+
+        <div class=" lead font-weight-normal col-lg-3">
+            <a class="text-white" href="#">
+                <div class="step">
+                    <div class="number">01</div>
+                    <div class="text">Настройка и обзор</div>
+                </div>
+            </a>
+        </div>
+        <div class=" lead font-weight-normal col-lg-3">
+            <a class="text-white" href="#">
+                <div class="step">
+                    <div class="number">02</div>
+                    <div class="text">Создание каркаса</div>
+                </div>
+            </a>
+        </div>
+        <div class=" lead font-weight-normal col-lg-3">
+            <a class="text-white" href="#">
+                <div class="step">
+                    <div class="number">03</div>
+                    <div class="text">Завершение работы</div>
+                </div>
+            </a>
+        </div>
+    </div>
+
 </div>
+
+
+<script src="JS.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
