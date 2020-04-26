@@ -53,6 +53,37 @@ a, a:hover {
     width: auto;
 }
 
+
+body {
+    background-color: black !important;
+    overflow-x: hidden;
+}
+
+
+
+/* TODO: rename class size */
+.size{
+     height: 10vh;
+}
+
+.size {
+    font-size: 12pt;
+}
+
+.headline {
+    font-size: 24pt;
+}
+
+
+a:hover {
+    color: red;
+}
+
+
+.text-bottom{
+    position: absolute;
+    bottom: 20px;
+
 .step {
     width: 300px;
     border-bottom: 2px solid white;
@@ -76,9 +107,7 @@ a, a:hover {
     display: inline-block;
 }
 
-.size {
-    font-size: 12pt;
-}
+
 
 .checkmark{
     width: 40px;

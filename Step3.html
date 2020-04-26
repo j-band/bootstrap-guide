@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Step3</title>
+</head>
+<body>
+<nav class="navbar navbar-main navbar-expand-sm">
+    <div class="container-fluid">
+        <div class="row justify-content-sm-start">
+            <a class="navbar-expand-sm" href="#">
+                <img src="./img/logo.png" width="30" height="50" alt="">
+            </a>
+        </div>
+    </div>
+</nav>
+
+
+<div class="number">
+    <img src="img/03.png" alt="number">
+</div>
+<div class="col-6 offset-3">
+    <h1 class="mt-5 pb-4 text-light">Шаг 3. Добавление контента </h1>
+</div>
+
+<div class="col-6 offset-3 text-light">
+    <p class=" headline pt-3"><b> 1. Добавление отзывчивого изображения</b></p>
+    <p>
+        Bootstrap предоставляет класс
+        <kbd>.img-fluid</kbd> для создания адаптивных изображений. Этот класс делает их адаптивными для устройств разных
+        размеров.
+    </p>
+    <p>
+        Bootstrap также предоставляет другие классы для изображений.
+    </p>
+
+    <ul class="p-2">
+        <li><kbd>.rounded-circle</kbd> - формирует изображение в круг.</li>
+        <li><kbd>.rounded float-left/right</kbd> - выравнивает изображение.</li>
+        <li><kbd>.img-thumbnail</kbd> - придает изображению округлую границу в 1 пиксель.</li>
+    </ul>
+</div>
+
+<div class="col-6 mt-5 mb-5 offset-3 code bg-secondary">
+<pre class="text-white offset-1 ">
+    <code>
+&lt;!-- .img-fluid--&gt;
+&lt;img src=&quot;#&quot; class=&quot;img-fluid&quot; alt=&quot;image&quot;&gt;
+
+&lt;!-- .rounded-circle--&gt;
+&lt;img src=&quot;#&quot; class=&quot;rounded-circle&quot; alt=&quot;image&quot;&gt;
+
+&lt;!-- .float-left/right--&gt;
+&lt;img src=&quot;#&quot; class=&quot;float-left&quot;&gt;
+&lt;img src=&quot;#&quot; class=&quot;float-right&quot;&gt;
+
+&lt;!-- .img-thumbnail--&gt;
+&lt;img src=&quot;#&quot; class=&quot;img-thumbnail&quot; alt=&quot;image&quot;&gt;
+</code>
+</pre>
+</div>
+
+<div class="col-8 mb-5 offset-2">
+    <p class="codepen" data-height="350" data-theme-id="dark" data-default-tab="html,result" data-user="yuliakalina"
+       data-slug-hash="ZEbKydz"
+       style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+       data-pen-title="ZEbKydz">
+  <span>See the Pen <a href="https://codepen.io/yuliakalina/pen/ZEbKydz">
+  ZEbKydz</a> by Julia Kalinichenko (<a href="https://codepen.io/yuliakalina">@yuliakalina</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</div>
+
+
+<div class="col-6 offset-3 text-light">
+    <p class=" headline pt-3"><b> 2. Добавление отзывчивой таблицы</b></p>
+    <p>
+        Таблицы используются для отображения структурированных данных в виде строк и столбцов. Boostrap предоставляет
+        класс <kbd>.table</kbd> для создания адаптивной таблицы. Класс <kbd>.table</kbd> определяет расположение таблицы
+        и ставит границу.
+    </p>
+    <p>
+        Bootstrap также предоставляет другие классы для таблиц.
+    </p>
+    <ul class="p-2">
+        <li><kbd>.table-responsive{-sm-md-lg-xl}</kbd> - создает адаптивную таблицу.</li>
+        <li><kbd>.table-striped</kbd> - добавляет "зебру" в таблицу.</li>
+        <li><kbd>.table-hover</kbd> - добавляет эффект наведения (серый цвет фона) на строки таблицы.</li>
+        <li><kbd>.table-dark</kbd> - добавляет в таблицу черный фон.</li>
+        <li><kbd>.table-borderless</kbd> - удаляет границы из таблицы.</li>
+    </ul>
+</div>
+
+
+<div class="col-6 mt-5 mb-5 offset-3 code bg-secondary">
+<pre class="text-white offset-1 ">
+    <code>
+&lt;div class=&quot;container&quot;&gt;
+  &lt;h2&gt;Таблица&lt;/h2&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table table-bordered table-hover&quot;&gt;
+    &lt;thead class=&quot;thead-dark&quot;&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Имя&lt;/th&gt;
+        &lt;th&gt;Фамилия&lt;/th&gt;
+        &lt;th&gt;Email&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Юлия&lt;/td&gt;
+        &lt;td&gt;Калиниченко&lt;/td&gt;
+        &lt;td&gt;yuliia.kalinichenko@nure.ua&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Юлия&lt;/td&gt;
+        &lt;td&gt;Калиниченко&lt;/td&gt;
+        &lt;td&gt;yuliia.kalinichenko@nure.ua&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Юлия&lt;/td&gt;
+        &lt;td&gt;Калиниченко&lt;/td&gt;
+        &lt;td&gt;yuliia.kalinichenko@nure.ua&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+</code>
+</pre>
+</div>
+
+
+<div class="col-8 mb-5 offset-2">
+    <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="yuliakalina"
+       data-slug-hash="WNQjOJK"
+       style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+       data-pen-title="WNQjOJK">
+  <span>See the Pen <a href="https://codepen.io/yuliakalina/pen/WNQjOJK">
+  WNQjOJK</a> by Julia Kalinichenko (<a href="https://codepen.io/yuliakalina">@yuliakalina</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</div>
+
+
+<div class="col-6 offset-3 text-light">
+    <p class=" headline pt-3"><b> 3. Добавление отзывчивого видео</b></p>
+    <p>
+
+        Bootstrap предоставляет классы, чтобы сделать вставки видео или слайд-шоу на основе ширины родительского
+        элемента, создавая внутреннее соотношение, которое масштабируется на любом устройстве. </p>
+    <p>
+        Иногда нам нужно отображать сторонние приложения на нашей веб-странице. Таким образом, мы можем использовать тег
+        <kbd>&lt;embed&gt;</kbd> ,
+        <kbd>&lt;iframe&gt;</kbd>,
+        <kbd>&lt;video&gt;</kbd> или
+        <kbd>&lt;object&gt;</kbd> для встраивания этих сторонних приложений.ние таблицы и ставит границу.
+    </p>
+    <p>
+        Bootstrap предоставляет класс <kbd>.embed-responsive </kbd> для создания адаптивного встраивания. Мы также можем
+        установить соотношение сторон.
+    </p>
+    <ul class="p-2">
+        <li><kbd> .embed-responseive-16by9</kbd> - Отображает код для вставки или видео в соотношении ширины и высоты
+            16:9.
+        </li>
+        <li><kbd>.embed-responseive-4by3</kbd> - Показывать код для вставки или видео в соотношении ширины и высоты 4:3
+        </li>
+    </ul>
+</div>
+
+<div class="col-6 mt-5 mb-5 offset-3 code bg-secondary">
+<pre class="text-white offset-1 ">
+    <code>
+  &lt;div class=&quot;embed-responsive embed-responsive-21by9&quot;&gt;
+  &lt;iframe class=&quot;embed-responsive-item&quot;src=&quot;https://www.youtube.com/embed/2JMMnNOhDoc&quot;
+   frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope;
+   picture-in-picture&quot;allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</code>
+</pre>
+</div>
+
+
+<div class="col-6 offset-3 text-light">
+    <p>
+        Таким образом, у нас получилось встроенное видео с YouTube для компьютеров, планшетов и мобильных
+        устройств.
+    </p>
+</div>
+
+
+
+
+<div class="col-6 offset-3 text-light">
+    <p class="headline pt-3"><b> 4. Завершение работы</b></p>
+    <p>
+        Мы использовали несколько компонентов для создания адаптивного веб-сайта. С помощью таких
+        компонентов легко создавать адаптивные сайты, которые сейчас пользуються огромным спросом.</p>
+    <p>
+        Так же у Bootstrap есть множество готовых тем которые вы можете использовать для ваших сайтов.
+        Каждая тема имеет свой собственный инструментарий с участием
+        Bootstrap, совершенно новых компонентов и плагинов.
+        Миллионы сайтов в интернете строятся на Bootstrap. Вы можете посмотреть некоторые примеры
+        <a class="text-white font-weight-bold" href="https://getbootstrap.ru/docs/4.3/examples/">здесь</a>. <br>Вдохновитесь
+        и создайте потрясающий сайт для Вас лично или ваших клиентов.
+        Желаем Вам удачи и успехов в изучении!
+    </p>
+    <p>
+        <b>P.S.</b> этот сайт тоже, написан на Bootstrap, если Вам интересно вы можете посмотреть исходный код в репозитории <a class="text-white font-weight-bold"
+            href="https://github.com/j-band/bootstrap-guide">Github.</a>
+
+    </p>
+</div>
+
+<a href="https://github.com/j-band/bootstrap-guide">
+    <button type="button" class=" mt-5 mb-5 col-lg-2 btn btn-outline-light offset-7 ">
+        Посмотреть работу
+    </button>
+</a>
+
+
+<footer class="container py-5">
+    <div class="row">
+        <div class="col-12 col-md">
+            <a href="index.html"> <img class="d-block mb-2" src="img/logo-muted.png" width="10%" alt="logo"></a>
+            <small class="d-block text-muted">© Юлия Калиниченко</small>
+            <small class="d-block ml-3 text-muted">2020</small>
+        </div>
+        <div class="col-6 col-md">
+            <p><a href="Step1.html" class="text-light font-weight-bold">Шаг 1. Введение в Bootstrap</a></p>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#">Адаптивный дизайн</a></li>
+                <li><a class="text-muted" href="#">Преймущества Bootstrap</a></li>
+                <li><a class="text-muted" href="#">Визуальный Breakpoints</a></li>
+                <li><a class="text-muted" href="#">Структура 12 столбцов</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <p><a href="Step2.html" class="text-light font-weight-bold">Шаг 2. Создание каркаса</a></p>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#">Добавление Bootstrap в проект</a></li>
+                <li><a class="text-muted" href="#">Создание базового макета</a></li>
+                <li><a class="text-muted" href="#">Добавление навигации</a></li>
+                <li><a class="text-muted" href="#">Добавление Glyphicons</a></li>
+                <li><a class="text-muted" href="#">Добавление панели</a></li>
+                <li><a class="text-muted" href="#">Добавление Jumbotron</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <p><a href="#" class="text-light font-weight-bold">Шаг 3. Добавление контента</a></p>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#">Добавление изображения</a></li>
+                <li><a class="text-muted" href="#">Добавление таблицы</a></li>
+                <li><a class="text-muted" href="#">Добавление видео</a></li>
+                <li><a class="text-muted" href="#">Завершение работы</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
