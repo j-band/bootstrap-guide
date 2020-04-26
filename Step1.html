@@ -2,25 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/main.css" rel="stylesheet">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Step1</title>
 </head>
-<body>
+<body class="bg-grey">
+
+<div class="navbar fixed-top justify-content-lg-between">
+    <div class="container-fluid ">
+        <div class="row col-12 ">
+            <div class="col-11">
+                <a href="#">
+                    <img src="./img/logo.png" width="30" height="50" alt="">
+                </a>
+            </div>
+            <div class="col-1">
+                <button type="button" class="btn btn-link navbar-toggle collapsed " data-toggle="modal"
+                        data-target="#menuModal">
+                    <i class="fa fa-bars bars" ></i>
+                </button>
+            </div>
+            <!-- FULLSCREEN MODAL CODE (.fullscreen) -->
+            <div class="modal fade fullscreen" id="menuModal" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="color:black;">
+                        <div class="modal-header" style="">
+                            <button type="button" class="close btn btn-link" data-dismiss="modal"
+                                    aria-hidden="true">
+                                <i class="fa fa-times" style="color:black;"></i>
+                            </button>
+                        </div>
+
+                        <div class="modal-body mt-5">
+                            <div class="col-12 p-0 m-0 row text-center">
+                                <div class="col-12">
+                                    <a href="#">
+                                        <img class="logo-menu" src="img/logo-menu.svg" alt="logo">
+                                        <p class="text-dark font-weight-bold"> Главная </p>
+                                    </a>
+                                </div>
+                                <div class=" col-12 m-0 p-0">
+
+                                    <ul class="col-12 row p-0 m-0 pl-4 pr-4 justify-content-around">
+                                        <li class="col-3 list-group text-left menu-item">
+                                            <a class="text-dark font-weight-bold m-4" href="#">
+                                                Шаг 1. Настройка и обзор
+                                            </a>
+                                            <ol class="menu-list">
+                                                <li><a class="text-dark" href="#">Создание страницы HTML</a></li>
+                                                <li><a class="text-dark" href="#">Загрузите Bootstrap </a></li>
+                                                <li><a class="text-dark" href="#"> Включить JQuery</a></li>
+                                                <li><a class="text-dark" href="#">Загрузить Bootstrap JavaScript </a>
+                                                </li>
+                                                <li><a class="text-dark" href="#">Сложите все это вместе</a></li>
+                                            </ol>
+                                        </li>
+                                        <li class="col-3 list-group text-left menu-item">
+                                            <a class="text-dark font-weight-bold m-4" href="#">
+                                                Шаг 2. Создание лендинга
+                                            </a>
+
+                                            <ol class="menu-list">
+                                                <li><a class="text-dark " href="#">Добавить панель навигации </a></li>
+                                                <li><a class="text-dark" href="#"> Подключение стилей</a>
+                                                </li>
+                                                <li><a class="text-dark" href="#"> Содержимое
+                                                    страницы </a></li>
+                                                <li><a class="text-dark" href="#">Фон и JavaScript</a></li>
+                                                <li><a class="text-dark" href="#">Добавление наложения</a></li>
+                                                <li><a class="text-dark" href="#">Включение заголовка страницы
+                                                    и основного текста </a></li>
+                                            </ol>
+                                        </li>
+                                        <li class="col-3 list-group text-left menu-item">
+                                            <a class="text-dark font-weight-bold m-4" href="#">
+                                                Шаг 3. Завершение работы
+                                            </a>
+                                            <ol class="menu-list">
+                                                <li><a class="text-dark" href="#"> Создание кнопки CTA </a></li>
+                                                <li><a class="text-dark" href="#"> Установление раздела </a></li>
+                                                <li><a class="text-dark" href="#"> Добавление контактной формы </a></li>
+                                                <li><a class="text-dark" href="#"> Создание нижнего колонтитула </a></li>
+                                                <li><a class="text-dark" href="#"> Добавление медиа-запросов </a></li>
+                                                <li><a class="text-dark" href="#"> Получение вашего сайта в прямом
+                                                    эфире</a></li>
+                                            </ol>
+                                        </li>
+                                    </ul>
+                                </div>
 
 
-<nav class="navbar navbar-main navbar-expand-sm">
-    <div class="container-fluid">
-        <div class="row justify-content-sm-start">
-            <a class="navbar-expand-sm" href="#">
-                <img src="./img/logo.png" width="30" height="50" alt="">
-            </a>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div>
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.fullscreen -->
+
+
         </div>
     </div>
-</nav>
+</div>
 
 
 <div class="number">
@@ -201,6 +287,25 @@
     </div>
 </footer>
 
+
+
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+
+<script src="JS.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
 
 </body>
 </html>
