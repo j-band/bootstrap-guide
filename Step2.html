@@ -2,36 +2,118 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/main.css" rel="stylesheet">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Step2</title>
 </head>
-<body>
+<body class="bg-grey">
+
+<div class="navbar menu-fix justify-content-lg-between">
+    <div class="container-fluid ">
+        <div class="row col-12">
+            <div class="col-11">
+                <a href="#">
+                    <img src="./img/logo.png" width="30" height="50" alt="">
+                </a>
+            </div>
+            <div class="col-1">
+                <button type="button" class="btn btn-link navbar-toggle collapsed " data-toggle="modal"
+                        data-target="#menuModal">
+                    <i class="fa fa-bars bars" ></i>
+                </button>
+            </div>
+            <!-- FULLSCREEN MODAL CODE (.fullscreen) -->
+            <div class="modal fade fullscreen" id="menuModal" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="color:black;">
+                        <div class="modal-header" style="">
+                            <button type="button" class="close btn btn-link" data-dismiss="modal"
+                                    aria-hidden="true">
+                                <i class="fa fa-times" style="color:black;"></i>
+                            </button>
+                        </div>
+
+                        <div class="modal-body mt-5">
+                            <div class="col-12 p-0 m-0 row text-center">
+                                <div class="col-12">
+                                    <a href="index.html">
+                                        <img class="logo-menu" src="img/logo-menu.svg" alt="logo">
+                                        <p class="text-dark font-weight-bold"> Главная </p>
+                                    </a>
+                                </div>
+                                <div class=" col-12 m-0 p-0">
+
+                                    <ul class="col-12 row p-0 m-0 pl-4 pr-4 justify-content-around">
+                                        <li class="col-3 list-group text-left menu-item">
+                                            <a class="text-dark font-weight-bold m-4" href="Step1.html">
+                                                Шаг 1. Введение в Bootstrap
+                                            </a>
+                                            <ol class="menu-list">
+                                                <li><a class="text-dark" href="Step1.html#introduction">Введение в Bootstrap</a></li>
+                                                <li><a class="text-dark" href="Step1.html#adaptive">Адаптивный дизайн </a></li>
+                                                <li><a class="text-dark" href="Step1.html#advantages"> Преймущества Bootstrap</a></li>
+                                                <li><a class="text-dark" href="Step1.html#break">Визуальный Breakpoints </a>
+                                                </li>
+                                                <li><a class="text-dark" href="Step1.html#grid">Структура 12 столбцов</a></li>
+                                            </ol>
+                                        </li>
+                                        <li class="col-3 list-group text-left menu-item">
+                                            <a class="text-dark font-weight-bold m-4" href="Step2.html">
+                                                Шаг 2. Создание каркаса
+                                            </a>
+
+                                            <ol class="menu-list">
+                                                <li><a class="text-dark " href="Step2.html">Создание каркаса</a></li>
+                                                <li><a class="text-dark" href="Step2.html#frame">  Добавление Bootstrap</a>
+                                                </li>
+                                                <li><a class="text-dark" href="Step2.html#layout"> Создание базового макета </a></li>
+                                                <li><a class="text-dark" href="Step2.html#nav">Добавление навигации</a></li>
+                                                <li><a class="text-dark" href="Step2.html#icon">Добавление Glyphicons</a></li>
+                                                <li><a class="text-dark" href="Step2.html#panel">Добавление панели</a></li>
+                                                <li><a class="text-dark" href="Step2.html#jumb">Добавление Jumbotron</a></li>
+                                            </ol>
+                                        </li>
+                                        <li class="col-3 list-group text-left menu-item">
+                                            <a class="text-dark font-weight-bold m-4" href="Step3.html">
+                                                Шаг 3. Добавление контента
+                                            </a>
+                                            <ol class="menu-list">
+                                                <li><a class="text-dark" href="Step3.html#img"> Добавление изображения</a></li>
+                                                <li><a class="text-dark" href="Step3.html#table"> Добавление таблицы</a></li>
+                                                <li><a class="text-dark" href="Step3.html#video"> Добавление видео </a></li>
+                                                <li><a class="text-dark" href="Step3.html#end"> Завершение работы</a></li>
+                                            </ol>
+                                        </li>
+                                    </ul>
+                                </div>
 
 
-<nav class="navbar navbar-main navbar-expand-sm">
-    <div class="container-fluid">
-        <div class="row justify-content-sm-start">
-            <a class="navbar-expand-sm" href="#">
-                <img src="./img/logo.png" width="30" height="50" alt="">
-            </a>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div>
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.fullscreen -->
+
+
         </div>
     </div>
-</nav>
+</div>
 
 
 <div class="number">
     <img src="img/02.png" alt="number">
 </div>
-<div class="col-6 offset-3">
-    <h1 class="mt-5 pb-4 text-light">Шаг 2. Создание каркаса </h1>
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 ">
+    <h1 class="mt-5 line pb-4 text-light">Шаг 2. Создание каркаса </h1>
 </div>
 
-<div class="col-6 offset-3 text-light">
-    <p class="headline pt-3"><b>1. Создание каркаса</b></p>
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
+    <p id="frame" class="headline pt-3"><b>1. Создание каркаса</b></p>
     <p>
         Под каркасом понимаются самые основные блоки, которые разделяют содержимое друг от друга. Самый
         простой пример: шапка – блок слева – блок справа и подвал (футер). В этих блоках в свою очередь может быть очень
@@ -41,8 +123,8 @@
     </p>
 </div>
 
-<div class="col-6 offset-3 text-light">
-    <p class="headline pt-3"><b> 2. Добавление Bootstrap в проект</b></p>
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-m-0 offset-lg-3 text-light">
+    <p id="addboot" class="headline pt-3"><b> 2. Добавление Bootstrap в проект</b></p>
     <p>
         Мы будем создавать наш сайт с помощью Web Storm. Если у вас нет Web Storm, вы можете выбрать любой редактор на
         ваш выбор.
@@ -61,8 +143,8 @@
 </div>
 
 
-<div class="col-6 mt-5 mb-5 offset-3 code bg-secondary">
-<pre class="text-white offset-1 ">
+<div class="col-lg-6 mt-5 mb-5 offset-lg-3 col-md-12 col-sm-2 offset-sm-0 offset-md-0 offset-lg-3 code bg-secondary">
+<pre class="text-white offset-lg-1  offset-sm-0 offset-md-0">
     <code>
 &lt;!-- CSS --&gt;
 &lt;link rel=&quot;stylesheet&quot;
@@ -91,8 +173,8 @@ crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 </div>
 
 
-<div class="col-6 offset-3 text-light">
-    <p class="headline pt-3"><b> 3. Создание базового макета</b></p>
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
+    <p id="layout" class="headline pt-3"><b> 3. Создание базового макета</b></p>
     <p>
         В первую очередь, нам необходимо создать новую HTML-страницу <kbd>index.html</kbd>, после создания добавляем
         следующий код.
@@ -109,8 +191,8 @@ crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 </div>
 
 
-<div class="col-6 mt-5 mb-5 offset-3 code bg-secondary">
-<pre class="text-white offset-1 ">
+<div class="col-lg-6 mt-5 mb-5 offset-lg-3 col-md-12 col-sm-2 offset-sm-0 offset-md-0 offset-lg-3 code bg-secondary">
+<pre class="text-white offset-lg-1  offset-sm-0 offset-md-0">
     <code>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -162,14 +244,14 @@ crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 </pre>
 </div>
 
-<div class="col-6 offset-3 text-light">
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
     <p>
         Эта строка обеспечивает правильное отображение веб-страницы на мобильных устройствах.
     </p>
 </div>
 
-<div class="col-6 mt-5 mb-5 offset-3 code bg-secondary">
-<pre class="text-white offset-1 ">
+<div class="col-lg-6 mt-5 mb-5 offset-lg-3 col-md-12 col-sm-2 offset-sm-0 offset-md-0 offset-lg-3 code bg-secondary">
+<pre class="text-white offset-lg-1  offset-sm-0 offset-md-0">
     <code>
 &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
 initial-scale=1, maximum-scale=1, user-scalable=no&quot;&gt;
@@ -177,7 +259,7 @@ initial-scale=1, maximum-scale=1, user-scalable=no&quot;&gt;
 </pre>
 </div>
 
-<div class="col-6 offset-3 text-light">
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
     <p>
         Наш код создает разделы
         <kbd>&lt;header&gt;</kbd>
@@ -200,24 +282,19 @@ initial-scale=1, maximum-scale=1, user-scalable=no&quot;&gt;
 </div>
 
 
-<div class="col-6 offset-3 text-light">
-    <p class="headline pt-3"><b> 4. Добавление навигации</b></p>
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
+    <p id="nav" class="headline pt-3"><b> 4. Добавление навигации</b></p>
     <p>
         Bootstrap предоставляет компонент <kbd>Navbar</kbd> для отображения элемента навигации. Компонент навигационной
         панели
         Bootstrap содержит кнопку-переключатель (3 маленькие горизонтальные линии справа) для отображения и скрытия
         элементов навигации.
     </p>
-    <p>
-        Добавьте этот код ниже под заголовком раздела:
-    </p>
-
-
 </div>
 
 
-<div class="col-6 mt-5 mb-5 offset-3 code bg-secondary">
-<pre class="text-white offset-1 ">
+<div class="col-lg-6 mt-5 mb-5 offset-lg-3 col-md-12 col-sm-2 offset-sm-0 offset-md-0 offset-lg-3 code bg-secondary">
+<pre class="text-white offset-lg-1  offset-sm-0 offset-md-0 ">
     <code>
 &lt;nav class=&quot;navbar navbar-expand-lg navbar-light bg-light&quot;&gt;
   &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Navbar&lt;/a&gt;
@@ -246,8 +323,11 @@ initial-scale=1, maximum-scale=1, user-scalable=no&quot;&gt;
 </pre>
 </div>
 
-<div class="col-8 mb-5 offset-2">
-    <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="yuliakalina" data-slug-hash="gOaWWWO" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="gOaWWWO">
+<div class="col-lg-8 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-2 text-light">
+    <p class="codepen" data-height="350" data-theme-id="dark" data-default-tab="html,result" data-user="yuliakalina"
+       data-slug-hash="gOaWWWO"
+       style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+       data-pen-title="gOaWWWO">
   <span>See the Pen <a href="https://codepen.io/yuliakalina/pen/gOaWWWO">
   gOaWWWO</a> by Julia Kalinichenko (<a href="https://codepen.io/yuliakalina">@yuliakalina</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -256,7 +336,7 @@ initial-scale=1, maximum-scale=1, user-scalable=no&quot;&gt;
 </div>
 
 
-<div class="col-6 offset-3 text-light">
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
     <p>
         В данном примере, использовано несколько классов для <kbd> .navbar</kbd>
     </p>
@@ -279,8 +359,8 @@ initial-scale=1, maximum-scale=1, user-scalable=no&quot;&gt;
 </div>
 
 
-<div class="col-6 offset-3 text-light">
-    <p class="headline pt-3"><b> 4. Добавление Glyphicons</b></p>
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
+    <p id="icon" class="headline pt-3"><b> 4. Добавление Glyphicons</b></p>
     <p>
         Glyphicon - это библиотека значков, которая использует символы Юникода для отображения значка. Glyphicon
         предоставляют разные классы для представления разных значков. Все glyphicon являются платными, но с помощью
@@ -301,28 +381,30 @@ initial-scale=1, maximum-scale=1, user-scalable=no&quot;&gt;
 </div>
 
 
-<div class="col-6 mt-5 mb-5 offset-3 code bg-secondary">
-<pre class="text-white offset-1 ">
+<div class="col-lg-6 mt-5 mb-5 offset-lg-3 col-md-12 col-sm-2 offset-sm-0 offset-md-0 offset-lg-3 code bg-secondary">
+<pre class="text-white offset-lg-1  offset-sm-0 offset-md-0">
     <code>
 &lt;span class=&quot;glyphicon glyphicon-home&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
 </code>
 </pre>
 </div>
 
-<div class="col-6 offset-3 text-light">
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
     <p>
         Приведенная выше строка создаст значок дома. Полный список классов значков доступен <a
             class="text-white font-weight-bold" href="https://getbootstrap.com/docs/3.3/components/">здесь.</a>
     </p>
 </div>
 
-<div class="col-6 offset-3 text-light">
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
     <p>
         Используйте их в кнопках, группах кнопок для панели инструментов, навигации или ввода с префиксной формой.
     </p>
 </div>
-<div class="col-6 mt-5 mb-5 offset-3 code bg-secondary">
-<pre class="text-white offset-1 ">
+
+
+<div class="col-lg-6 mt-5 mb-5 offset-lg-3 col-md-12 col-sm-2 offset-sm-0 offset-md-0 offset-lg-3 code bg-secondary">
+<pre class="text-white offset-lg-1  offset-sm-0 offset-md-0">
     <code>
 &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg&quot;&gt;
   &lt;span class=&quot;glyphicon glyphicon-book&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; Book
@@ -332,8 +414,8 @@ initial-scale=1, maximum-scale=1, user-scalable=no&quot;&gt;
 </div>
 
 
-<div class="col-6 offset-3 text-light">
-    <p class="headline pt-3"><b> 5. Добавление панели</b></p>
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
+    <p id="panel" class="headline pt-3"><b> 5. Добавление панели</b></p>
     <p>
         Панели являются элементами контейнера и используются для хранения другого содержимого. Иногда нам нужно
         отобразить некоторый контент внутри окна, тогда мы можем использовать панели. Bootstrap предоставляет отзывчивые
@@ -356,8 +438,8 @@ initial-scale=1, maximum-scale=1, user-scalable=no&quot;&gt;
 </div>
 
 
-<div class="col-6 mt-5 mb-5 offset-3 code bg-secondary">
-<pre class="text-white offset-1 ">
+<div class="col-lg-6 mt-5 mb-5 offset-lg-3 col-md-12 col-sm-2 offset-sm-0 offset-md-0 offset-lg-3 code bg-secondary">
+<pre class="text-white offset-lg-1  offset-sm-0 offset-md-0">
     <code>
 &lt;div class=&quot;container&quot;&gt;
   &lt;h2&gt;Панели с классом панели по умолчанию&lt;/h2&gt;
@@ -379,7 +461,7 @@ initial-scale=1, maximum-scale=1, user-scalable=no&quot;&gt;
 </div>
 
 
-<div class="col-6 offset-3 text-light">
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
     <ul class="p-2">
         <li>
             Используйте класс <kbd>.panel-heading</kbd> для создания заголовка панели.
@@ -388,7 +470,7 @@ initial-scale=1, maximum-scale=1, user-scalable=no&quot;&gt;
             Используйте класс <kbd>.panel-body</kbd> для создания тела панели.
         </li>
         <li>
-            Используйте класс <kbd>.panel-footer</kbd> для создания панели нижнего колонтитула.
+            Используйте класс <kbd>.panel-footer</kbd> для создания панели подвала.
         </li>
         <li>
             Чтобы сгруппировать много панелей вместе, оберните &lt;/div&gt;классом <kbd>.panel-group</kbd> вокруг них.
@@ -396,15 +478,18 @@ initial-scale=1, maximum-scale=1, user-scalable=no&quot;&gt;
     </ul>
 </div>
 
-<div class="col-6 offset-3 text-light">
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
     <p>
         Чтобы раскрасить панель, используйте контекстные классы <kbd>.panel-default, .panel-primary, .panel-success,
         .panel-info, .panel-warning или .panel-danger</kbd>
     </p>
 </div>
 
-<div class="col-8 mb-5 offset-2">
-    <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="yuliakalina" data-slug-hash="OJymgMm" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="OJymgMm">
+<div class="col-lg-8 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-2 text-light">
+    <p class="codepen" data-height="350" data-theme-id="dark" data-default-tab="html,result" data-user="yuliakalina"
+       data-slug-hash="OJymgMm"
+       style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+       data-pen-title="OJymgMm">
   <span>See the Pen <a href="https://codepen.io/yuliakalina/pen/OJymgMm">
   OJymgMm</a> by Julia Kalinichenko (<a href="https://codepen.io/yuliakalina">@yuliakalina</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -413,8 +498,8 @@ initial-scale=1, maximum-scale=1, user-scalable=no&quot;&gt;
 </div>
 
 
-<div class="col-6 offset-3 text-light">
-    <p class="headline pt-3"><b> 5. Добавление Jumbotron</b></p>
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
+    <p id="jumb" class="headline pt-3"><b> 6. Добавление Jumbotron</b></p>
     <p>
         Jumbotron используется для отображения ведущего текста на веб-странице. Мы можем использовать jumbotron,
         чтобы
@@ -424,8 +509,8 @@ initial-scale=1, maximum-scale=1, user-scalable=no&quot;&gt;
 </div>
 
 
-<div class="col-6 mt-5 mb-5 offset-3 code bg-secondary">
-<pre class="text-white offset-1 ">
+<div class="col-lg-6 mt-5 mb-5 offset-lg-3 col-md-12 col-sm-2 offset-sm-0 offset-md-0 offset-lg-3 code bg-secondary">
+<pre class="text-white offset-lg-1  offset-sm-0 offset-md-0">
     <code>
   &lt;div class=&quot;jumbotron&quot;&gt;
      &lt;h1 class=&quot;display-4&quot;&gt;Bootstrap&lt;/h1&gt;
@@ -444,7 +529,7 @@ initial-scale=1, maximum-scale=1, user-scalable=no&quot;&gt;
 </pre>
 </div>
 
-<div class="col-6 offset-3 text-light">
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
     <p>
         Теперь мы готовы приступить к следующему шагу.
     </p>
@@ -452,7 +537,7 @@ initial-scale=1, maximum-scale=1, user-scalable=no&quot;&gt;
 
 
 <a href="Step3.html">
-    <button type="button" class=" mt-5 mb-5 col-lg-2 btn btn-outline-light offset-7 ">
+    <button type="button" class=" mt-5 mb-5 col-lg-2 btn btn-outline-light offset-sm-0 offset-md-0 offset-lg-7 ">
         Готово! Следующий шаг
     </button>
 </a>
@@ -468,34 +553,53 @@ initial-scale=1, maximum-scale=1, user-scalable=no&quot;&gt;
         <div class="col-6 col-md">
             <p><a href="Step1.html" class="text-light font-weight-bold">Шаг 1. Введение в Bootstrap</a></p>
             <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="#">Адаптивный дизайн</a></li>
-                <li><a class="text-muted" href="#">Преймущества Bootstrap</a></li>
-                <li><a class="text-muted" href="#">Визуальный Breakpoints</a></li>
-                <li><a class="text-muted" href="#">Структура 12 столбцов</a></li>
+                <li><a class="text-muted" href="Step1.html#introduction">Введение в Bootstrap</a></li>
+                <li><a class="text-muted" href="Step1.html#adaptive">Адаптивный дизайн</a></li>
+                <li><a class="text-muted" href="Step1.html#advantages">Преймущества Bootstrap</a></li>
+                <li><a class="text-muted" href="Step1.html#break">Визуальный Breakpoints</a></li>
+                <li><a class="text-muted" href="Step1.html#grid">Структура 12 столбцов</a></li>
             </ul>
         </div>
         <div class="col-6 col-md">
             <p><a href="Step2.html" class="text-light font-weight-bold">Шаг 2. Создание каркаса</a></p>
             <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="#">Добавление Bootstrap в проект</a></li>
-                <li><a class="text-muted" href="#">Создание базового макета</a></li>
-                <li><a class="text-muted" href="#">Добавление навигации</a></li>
-                <li><a class="text-muted" href="#">Добавление Glyphicons</a></li>
-                <li><a class="text-muted" href="#">Добавление панели</a></li>
-                <li><a class="text-muted" href="#">Добавление Jumbotron</a></li>
+                <li><a class="text-muted" href="Step2.html#addboot">Добавление Bootstrap в проект</a></li>
+                <li><a class="text-muted" href="Step2.html#layout">Создание базового макета</a></li>
+                <li><a class="text-muted" href="Step2.html#nav">Добавление навигации</a></li>
+                <li><a class="text-muted" href="Step2.html#icon">Добавление Glyphicons</a></li>
+                <li><a class="text-muted" href="Step2.html#panel">Добавление панели</a></li>
+                <li><a class="text-muted" href="Step2.html#jumb">Добавление Jumbotron</a></li>
             </ul>
         </div>
         <div class="col-6 col-md">
-            <p><a href="#" class="text-light font-weight-bold">Шаг 3. Добавление контента</a></p>
+            <p><a href="Step3.html" class="text-light font-weight-bold">Шаг 3. Добавление контента</a></p>
             <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="#">Добавление изображения</a></li>
-                <li><a class="text-muted" href="#">Добавление таблицы</a></li>
-                <li><a class="text-muted" href="#">Добавление видео</a></li>
-                <li><a class="text-muted" href="#">Завершение работы</a></li>
+                <li><a class="text-muted" href="Step3.html#img">Добавление изображения</a></li>
+                <li><a class="text-muted" href="Step3.html#table">Добавление таблицы</a></li>
+                <li><a class="text-muted" href="Step3.html#video">Добавление видео</a></li>
+                <li><a class="text-muted" href="Step3.html#end">Завершение работы</a></li>
             </ul>
         </div>
     </div>
 </footer>
+
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+
+<script src="JS.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
 
 
 </body>

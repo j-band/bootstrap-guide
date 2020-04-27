@@ -11,29 +11,30 @@
 
 
 </head>
-<body class="bg-black">
+
+<body class="bg-custom-black">
 
 
 <div class="background">
-   <div class="navbar justify-content-lg-between">
+    <div class="navbar   menu-fix justify-content-lg-between">
         <div class="container-fluid ">
-            <div class="row col-12">
-                <div class="col-11">
-                 <a href="#">
-                     <img src="./img/logo.png" width="30" height="50" alt="">
-                 </a>
+            <div class="row col-lg-12">
+                <div class="col-lg-11 col-md-11 ">
+                    <a href="#">
+                        <img src="./img/logo.png" width="30" height="50" alt="">
+                    </a>
                 </div>
-                <div class="col-1">
-                <button type="button" class="btn btn-link navbar-toggle collapsed " data-toggle="modal"
-                        data-target="#menuModal">
-                    <i class="fa fa-bars bars" ></i>
-                </button>
+                <div class="col-lg-1 col-md-1 ">
+                    <button type="button" class="btn btn-link navbar-toggle collapsed " data-toggle="modal"
+                            data-target="#menuModal">
+                        <i class="fa fa-bars bars"></i>
+                    </button>
                 </div>
                 <!-- FULLSCREEN MODAL CODE (.fullscreen) -->
                 <div class="modal fade fullscreen" id="menuModal" tabindex="-1" role="dialog"
                      aria-labelledby="myModalLabel"
                      aria-hidden="true">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog ">
                         <div class="modal-content" style="color:black;">
                             <div class="modal-header" style="">
                                 <button type="button" class="close btn btn-link" data-dismiss="modal"
@@ -45,56 +46,68 @@
                             <div class="modal-body mt-5">
                                 <div class="col-12 p-0 m-0 row text-center">
                                     <div class="col-12">
-                                         <a href="#">
-                                             <img class="logo-menu" src="img/logo-menu.svg" alt="logo">
+                                        <a href="index.html">
+                                            <img class="logo-menu" src="img/logo-menu.svg" alt="logo">
                                             <p class="text-dark font-weight-bold"> Главная </p>
-                                         </a>
+                                        </a>
                                     </div>
                                     <div class=" col-12 m-0 p-0">
 
                                         <ul class="col-12 row p-0 m-0 pl-4 pr-4 justify-content-around">
                                             <li class="col-3 list-group text-left menu-item">
-                                                <a class="text-dark font-weight-bold m-4" href="#">
-                                                    Шаг 1. Настройка и обзор
+                                                <a class="text-dark font-weight-bold m-4" href="Step1.html">
+                                                    Шаг 1. Введение в Bootstrap
                                                 </a>
                                                 <ol class="menu-list">
-                                                    <li><a class="text-dark" href="#">Создание страницы HTML</a></li>
-                                                    <li><a class="text-dark" href="#">Загрузите Bootstrap </a></li>
-                                                    <li><a class="text-dark" href="#"> Включить JQuery</a></li>
-                                                    <li><a class="text-dark" href="#">Загрузить Bootstrap JavaScript </a>
+                                                    <li><a class="text-dark" href="Step1.html#introduction">Введение в
+                                                        Bootstrap</a></li>
+                                                    <li><a class="text-dark" href="Step1.html#adaptive">Адаптивный
+                                                        дизайн </a></li>
+                                                    <li><a class="text-dark" href="Step1.html#advantages"> Преймущества
+                                                        Bootstrap</a></li>
+                                                    <li><a class="text-dark" href="Step1.html#break">Визуальный
+                                                        Breakpoints </a>
                                                     </li>
-                                                    <li><a class="text-dark" href="#">Сложите все это вместе</a></li>
+                                                    <li><a class="text-dark" href="Step1.html#grid">Структура 12
+                                                        столбцов</a></li>
                                                 </ol>
                                             </li>
                                             <li class="col-3 list-group text-left menu-item">
-                                                <a class="text-dark font-weight-bold m-4" href="#">
-                                                    Шаг 2. Создание лендинга
+                                                <a class="text-dark font-weight-bold m-4" href="Step2.html">
+                                                    Шаг 2. Создание каркаса
                                                 </a>
 
                                                 <ol class="menu-list">
-                                                    <li><a class="text-dark " href="#">Добавить панель навигации </a></li>
-                                                    <li><a class="text-dark" href="#"> Подключение стилей</a>
+                                                    <li><a class="text-dark " href="Step2.html">Создание каркаса</a>
                                                     </li>
-                                                    <li><a class="text-dark" href="#"> Содержимое
-                                                        страницы </a></li>
-                                                    <li><a class="text-dark" href="#">Фон и JavaScript</a></li>
-                                                    <li><a class="text-dark" href="#">Добавление наложения</a></li>
-                                                    <li><a class="text-dark" href="#">Включение заголовка страницы
-                                                        и основного текста </a></li>
+                                                    <li><a class="text-dark" href="Step2.html#frame"> Добавление
+                                                        Bootstrap</a>
+                                                    </li>
+                                                    <li><a class="text-dark" href="Step2.html#layout"> Создание базового
+                                                        макета </a></li>
+                                                    <li><a class="text-dark" href="Step2.html#nav">Добавление
+                                                        навигации</a></li>
+                                                    <li><a class="text-dark" href="Step2.html#icon">Добавление
+                                                        Glyphicons</a></li>
+                                                    <li><a class="text-dark" href="Step2.html#panel">Добавление
+                                                        панели</a></li>
+                                                    <li><a class="text-dark" href="Step2.html#jumb">Добавление
+                                                        Jumbotron</a></li>
                                                 </ol>
                                             </li>
                                             <li class="col-3 list-group text-left menu-item">
-                                                <a class="text-dark font-weight-bold m-4" href="#">
-                                                    Шаг 3. Завершение работы
+                                                <a class="text-dark font-weight-bold m-4" href="Step3.html">
+                                                    Шаг 3. Добавление контента
                                                 </a>
                                                 <ol class="menu-list">
-                                                    <li><a class="text-dark" href="#"> Создание кнопки CTA </a></li>
-                                                    <li><a class="text-dark" href="#"> Установление раздела </a></li>
-                                                    <li><a class="text-dark" href="#"> Добавление контактной формы </a></li>
-                                                    <li><a class="text-dark" href="#"> Создание нижнего колонтитула </a></li>
-                                                    <li><a class="text-dark" href="#"> Добавление медиа-запросов </a></li>
-                                                    <li><a class="text-dark" href="#"> Получение вашего сайта в прямом
-                                                        эфире</a></li>
+                                                    <li><a class="text-dark" href="Step3.html#img"> Добавление
+                                                        изображения</a></li>
+                                                    <li><a class="text-dark" href="Step3.html#table"> Добавление
+                                                        таблицы</a></li>
+                                                    <li><a class="text-dark" href="Step3.html#video"> Добавление
+                                                        видео </a></li>
+                                                    <li><a class="text-dark" href="Step3.html#end"> Завершение
+                                                        работы</a></li>
                                                 </ol>
                                             </li>
                                         </ul>
@@ -113,12 +126,12 @@
     </div>
 
 
-
-
-    <div class="polygon">
-        <img src="img/polygon.png" alt="triangle">
+    <div class="polygon ">
+        <a href="index.html#blocks">
+            <img src="img/polygon.png" alt="triangle">
+        </a>
     </div>
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+    <div class="position-relative p-3 top text-center">
         <div class="col-md-6 p-lg-6 mx-auto my-6 headline-center">
             <h1 class="font-weight-normal header-boot text-white">Bootstrap</h1>
 
@@ -134,34 +147,34 @@
     </div>
 
     <div class="row mt-5 steps align-baseline col-lg-12 justify-content-end">
-        <div class="to-result col-lg-3 ">
-            <a class="text-secondary ml-5 size-font text-decoration-none" href="#">
+        <div class="to-result col-lg-3 	d-none d-lg-block ">
+            <a class="text-secondary ml-5 size-font text-decoration-none" href="Step3.html#end">
                 <img src="img/Group%203.svg" alt="check mark" class="checkmark mb-4">
                 <span class="mt-3 m-2 ">Перейти к <br>выводу</span>
             </a>
         </div>
 
-        <div class=" lead font-weight-normal col-lg-3">
-            <a class="text-white text-decoration-none" href="#">
+        <div class=" lead font-weight-normal col-lg-3 d-none d-lg-block">
+            <a class="text-white text-decoration-none" href="Step1.html">
                 <div class="step">
                     <div class="number">01</div>
-                    <div class="text">Настройка и обзор</div>
+                    <div class="text ">Введение в Bootstrap</div>
                 </div>
             </a>
         </div>
-        <div class=" lead font-weight-normal col-lg-3">
-            <a class="text-white text-decoration-none" href="#">
+        <div class=" lead font-weight-normal col-lg-3 d-none d-lg-block">
+            <a class="text-white text-decoration-none" href="Step2.html">
                 <div class="step">
                     <div class="number">02</div>
                     <div class="text">Создание каркаса</div>
                 </div>
             </a>
         </div>
-        <div class=" lead font-weight-normal col-lg-3">
-            <a class="text-white text-decoration-none" href="#">
+        <div class=" lead font-weight-normal col-lg-3 d-none d-lg-block">
+            <a class="text-white text-decoration-none" href="Step3.html">
                 <div class="step">
                     <div class="number">03</div>
-                    <div class="text">Завершение работы</div>
+                    <div class="text">Добавление контента</div>
                 </div>
             </a>
         </div>
@@ -171,10 +184,10 @@
 
 
 <div class="blocks text-white container-fluid m-3">
-    <div class="col-12 row border-white border size p-2 headline"><b>Введение в Bootstrap</b></div>
+    <div id="blocks" class="col-12 row border-white border size p-2 headline"><b>Введение в Bootstrap</b></div>
     <div class="row col-12 p-0">
         <div class="col-lg-3 border-white border pt-3 pb-0">
-            <a class="text-white text-decoration-none" href="#">
+            <a class="text-white" href="Step1.html#introduction">
                 <p><b>Шаг 1. Введение в Bootstrap</b></p>
                 <p>Bootstrap - это «самая популярная в мире среда HTML, CSS и JS для создания адаптивных мобильных
                     проектов в сети Интернете».</p>
@@ -182,20 +195,20 @@
         </div>
 
         <div class="col-lg-3 border border-white pt-3 pb-0  align-items-between">
-            <a class="text-white text-decoration-none" href="#">
+            <a class="text-white" href="Step1.html#adaptive">
                 <div class=" row justify-content-between  pl-3 pr-3">
-                    <p><b>Адаптивный дизайн</b></p>
+                    <p ><b>Адаптивный дизайн</b></p>
                     <p>1</p>
                 </div>
-                <div class="row pl-3 pr-3  align-self-end ">
-                    <p class="text-bottom">Концепция дизайна</p>
+                <div class="row pl-3 pr-3 d-none d-lg-block">
+                    <p class="text-bottom ">Концепция дизайна</p>
                 </div>
             </a>
         </div>
 
 
         <div class="col-lg-3 border border-white pt-3 pb-0 ">
-            <a class="text-white text-decoration-none" href="#">
+            <a class="text-white" href="Step1.html#advantages">
                 <div class=" row justify-content-between pl-3 pr-3">
                     <p><b>Преймущества Bootstrap </b></p>
                     <p>2</p>
@@ -208,19 +221,19 @@
             </a>
         </div>
 
-        <div class="col-lg-3 border border-white d-flex align-items-center  p-0 ">
+        <div class="col-lg-3 d-none d-lg-block border border-white  d-lg-flex align-items-center  p-0 ">
             <img width="100%" height="80%" src="img/hand.jpg" alt="hand">
         </div>
     </div>
 
     <div class="row col-12 p-0">
-        <div class="col-lg-3 border border-white d-flex align-items-center  p-0 ">
+        <div class="col-lg-3 d-none d-lg-block border border-white  d-lg-flex align-items-center  p-0 ">
             <img width="100%" height="80%" src="img/size.jpg" alt="button">
         </div>
 
 
         <div class="col-lg-3 border border-white pt-3 pb-0  align-items-between">
-            <a class="text-white text-decoration-none" href="#">
+            <a class="text-white " href="Step1.html#break">
                 <div class=" row justify-content-between  pl-3 pr-3">
                     <p><b> Визуальный Breakpoints</b></p>
                     <p>3</p>
@@ -232,12 +245,12 @@
             </a>
         </div>
 
-        <div class="col-lg-3 border border-white d-flex align-items-center  p-0 ">
+        <div class="col-lg-3 d-none d-lg-block border border-white  d-lg-flex align-items-center  p-0 ">
             <img width="100%" height="80%" src="img/grid.jpg" alt="button">
         </div>
 
         <div class="col-lg-3 border border-white pt-3 pb-0  align-items-between">
-            <a class="text-white text-decoration-none" href="#">
+            <a class="text-white " href="Step1.html#grid">
                 <div class=" row justify-content-between  pl-3 pr-3">
                     <p><b>Структура 12 столбцов</b></p>
                     <p>4</p>
@@ -256,7 +269,7 @@
     <div class="col-12 row border-white border size p-2 headline "><b>Создание каркаса</b></div>
     <div class="row col-12 p-0">
         <div class="col-lg-3 border-white border pt-3 pb-0">
-            <a class="text-white text-decoration-none" href="#">
+            <a class="text-white" href="Step2.html">
                 <p><b>Шаг 2. Создание каркаса</b></p>
                 <p>
                     Под каркасом понимаются самые основные блоки, которые разделяют содержимое друг от друга.
@@ -265,13 +278,13 @@
         </div>
 
 
-        <div class="col-lg-3 border border-white d-flex align-items-center  p-0 ">
+        <div class="col-lg-3 d-none d-lg-block border border-white  d-lg-flex align-items-center  p-0 ">
             <img width="100%" height="80%" src="img/structure.jpg" alt="button">
         </div>
 
 
         <div class="col-lg-3 border border-white pt-3 pb-0 ">
-            <a class="text-white text-decoration-none" href="#">
+            <a class="text-white" href="Step2.html#addboot">
                 <div class=" row justify-content-between pl-3 pr-3">
                     <p><b>Добавление Bootstrap в проект</b></p>
                     <p>1</p>
@@ -287,7 +300,7 @@
 
 
         <div class="col-lg-3 border border-white pt-3 pb-0 ">
-            <a class="text-white text-decoration-none" href="#">
+            <a class="text-white" href="Step2.html#layout">
                 <div class=" row justify-content-between pl-3 pr-3">
                     <p><b>Создание базового макета</b></p>
                     <p>2</p>
@@ -301,12 +314,12 @@
             </a>
         </div>
 
-        <div class="col-lg-3 border border-white d-flex align-items-center  p-0 ">
+        <div class="col-lg-3 d-none d-lg-block border border-white  d-lg-flex align-items-center  p-0 ">
             <img width="100%" height="80%" src="img/navigation.jpg" alt="button">
         </div>
 
         <div class="col-lg-3 border border-white pt-3 pb-0 ">
-            <a class="text-white text-decoration-none" href="#">
+            <a class="text-white" href="Step2.html#nav">
                 <div class=" row justify-content-between pl-3 pr-3">
                     <p><b>Добавление навигации</b></p>
                     <p>3</p>
@@ -323,12 +336,12 @@
             </a>
         </div>
 
-        <div class="col-lg-3 border border-white d-flex align-items-center  p-0 ">
+        <div class="col-lg-3 d-none d-lg-block border border-white  d-lg-flex align-items-center  p-0 ">
             <img width="100%" height="80%" src="img/icon.jpg" alt="button">
         </div>
 
         <div class="col-lg-3 border border-white pt-3 pb-0 ">
-            <a class="text-white text-decoration-none" href="#">
+            <a class="text-white" href="Step2.html#icon">
                 <div class=" row justify-content-between pl-3 pr-3">
                     <p><b>Добавление Glyphicons</b></p>
                     <p>4</p>
@@ -343,16 +356,16 @@
 
 
         <div class="col-lg-3 border border-white pt-3 pb-0 ">
-            <a class="text-white text-decoration-none" href="#">
+            <a class="text-white " href="Step2.html#panel">
                 <div class=" row justify-content-between pl-3 pr-3">
                     <p><b>Добавление панели</b></p>
                     <p>5</p>
                 </div>
-                <div class="row pl-3 pr-3 ">
+                <div>
                     <p>
                         Панель состоит из 3 частей:
                     </p>
-                    <ul class=" pl-3 pr-3">
+                    <ul class=" pl-3 ">
                         <li>Заголовок</li>
                         <li>Тело - содержит основной контент.</li>
                         <li> Подвал.</li>
@@ -361,12 +374,12 @@
             </a>
         </div>
 
-        <div class="col-lg-3 border border-white d-flex align-items-center  p-0 ">
+        <div class="col-lg-3 d-none d-lg-block border border-white  d-lg-flex align-items-center  p-0 ">
             <img width="100%" height="80%" src="img/panel.jpg" alt="button">
         </div>
 
         <div class="col-lg-3 border border-white pt-3 pb-0 ">
-            <a class="text-white text-decoration-none" href="#">
+            <a class="text-white " href="Step2.html#jumb">
                 <div class=" row justify-content-between pl-3 pr-3">
                     <p><b>Добавление Jumbotron</b></p>
                     <p>6</p>
@@ -380,17 +393,17 @@
             </a>
         </div>
 
-        <div class="col-lg-3 border border-white d-flex align-items-center  p-0 ">
+        <div class="col-lg-3 d-none d-lg-block border border-white  d-lg-flex align-items-center  p-0 ">
             <img width="100%" height="80%" src="img/tutorial.jpg" alt="button">
         </div>
 
 
     </div>
-    <div class="col-12 row border-white border size p-2 headline "><b>Добавление компонентов</b></div>
+    <div class="col-12 row border-white border size p-2 headline "><b>Добавление контента</b></div>
     <div class="row col-12 p-0">
         <div class="col-lg-3 border-white border pt-3 pb-0">
-            <a class="text-white text-decoration-none" href="#">
-                <p><b> Шаг 3. Добавление компонентов</b></p>
+            <a class="text-white" href="Step3.html">
+                <p><b> Шаг 3. Добавление контента</b></p>
                 <p>
                     Контент сайта и качество наполнения сайта напрямую отвечают за успех интернет-проекта.
                 </p>
@@ -398,7 +411,7 @@
         </div>
 
         <div class="col-lg-3 border border-white pt-3 pb-0 ">
-            <a class="text-white text-decoration-none" href="#">
+            <a class="text-white " href="Step3.html#img">
                 <div class=" row justify-content-between pl-3 pr-3">
                     <p><b>Добавление отзывчивого<br>
                         изображения</b></p>
@@ -406,19 +419,20 @@
                 </div>
                 <div class="row pl-3 pr-3 ">
                     <p>
-                        Обычно изображения отображаются как встроенный элемент в браузере. Так что bootstrap
-                        предоставляет класс .img-отзывчивый для создания адаптивных изображений.
+                        Bootstrap предоставляет класс
+                        .img-fluid для создания адаптивных изображений. Этот класс делает их адаптивными для
+                        устройств разных размеров.
                     </p>
                 </div>
             </a>
         </div>
 
-        <div class="col-lg-3 border border-white d-flex align-items-center  p-0 ">
+        <div class="col-lg-3 d-none d-lg-block border border-white  d-lg-flex align-items-center  p-0 ">
             <img width="100%" height="80%" src="img/over.jpg" alt="button">
         </div>
 
         <div class="col-lg-3 border border-white pt-3 pb-0 ">
-            <a class="text-white text-decoration-none" href="#">
+            <a class="text-white " href="Step3.html#table">
                 <div class=" row justify-content-between pl-3 pr-3">
                     <p><b>Добавление отзывчивой таблицы</b></p>
                     <p>2</p>
@@ -432,12 +446,12 @@
             </a>
         </div>
 
-        <div class="col-lg-3 border border-white d-flex align-items-center  p-0 ">
+        <div class="col-lg-3 d-none d-lg-block border border-white  d-lg-flex align-items-center  p-0 ">
             <img width="100%" height="80%" src="img/video.jpg" alt="button">
         </div>
 
         <div class="col-lg-3 border border-white pt-3 pb-0 ">
-            <a class="text-white text-decoration-none" href="#">
+            <a class="text-white" href="Step3.html#video">
                 <div class=" row justify-content-between pl-3 pr-3">
                     <p><b>Добавление отзывчивого видео</b></p>
                     <p>3</p>
@@ -452,12 +466,12 @@
         </div>
 
         <div class="col-lg-3 border border-white pt-3 pb-0 ">
-            <a class="text-white text-decoration-none" href="#">
+            <a class="text-white " href="Step3.html#end">
                 <div class=" row justify-content-between pl-3 pr-3">
                     <p><b> Завершение работы</b></p>
                     <p>4</p>
                 </div>
-                <div class="row pl-3 pr-3 ">
+                <div class="row pl-3 pr-3 d-none d-lg-block">
                     <p class="text-bottom">
                         Выводы и подведение итогов.
                     </p>
@@ -465,7 +479,7 @@
             </a>
         </div>
 
-        <div class="col-lg-3 border border-white d-flex align-items-center  p-0 ">
+        <div class="col-lg-3 d-none d-lg-block border border-white  d-lg-flex align-items-center  p-0 ">
             <img width="100%" height="80%" src="img/yes.jpg" alt="button">
         </div>
 
@@ -476,38 +490,39 @@
 
 <footer class="container py-5">
     <div class="row">
-        <div class="col-12 col-md">
-            <a href="index.html"> <img class="d-block mb-2" src="img/logo-muted.png" width="10%" alt="logo"></a>
+        <div class="col-12 col-md col-sm">
+            <a href="index.html"> <img class="d-block mb-2 " src="img/logo-muted.png" width="10%" alt="logo"></a>
             <small class="d-block text-muted">© Юлия Калиниченко</small>
-            <small class="d-block ml-3 text-muted">2020</small>
+            <small class="d-block ml-3 text-muted mb-4">2020</small>
         </div>
-        <div class="col-6 col-md">
+        <div class="col-6 col-md col-sm">
             <p><a href="Step1.html" class="text-light font-weight-bold">Шаг 1. Введение в Bootstrap</a></p>
             <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="#">Адаптивный дизайн</a></li>
-                <li><a class="text-muted" href="#">Преймущества Bootstrap</a></li>
-                <li><a class="text-muted" href="#">Визуальный Breakpoints</a></li>
-                <li><a class="text-muted" href="#">Структура 12 столбцов</a></li>
+                <li><a class="text-muted" href="Step1.html#introduction">Введение в Bootstrap</a></li>
+                <li><a class="text-muted" href="Step1.html#adaptive">Адаптивный дизайн</a></li>
+                <li><a class="text-muted" href="Step1.html#advantages">Преймущества Bootstrap</a></li>
+                <li><a class="text-muted" href="Step1.html#break">Визуальный Breakpoints</a></li>
+                <li><a class="text-muted" href="Step1.html#grid">Структура 12 столбцов</a></li>
             </ul>
         </div>
-        <div class="col-6 col-md">
+        <div class="col-6 col-md col-sm">
             <p><a href="Step2.html" class="text-light font-weight-bold">Шаг 2. Создание каркаса</a></p>
             <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="#">Добавление Bootstrap в проект</a></li>
-                <li><a class="text-muted" href="#">Создание базового макета</a></li>
-                <li><a class="text-muted" href="#">Добавление навигации</a></li>
-                <li><a class="text-muted" href="#">Добавление Glyphicons</a></li>
-                <li><a class="text-muted" href="#">Добавление панели</a></li>
-                <li><a class="text-muted" href="#">Добавление Jumbotron</a></li>
+                <li><a class="text-muted" href="Step2.html#addboot">Добавление Bootstrap в проект</a></li>
+                <li><a class="text-muted" href="Step2.html#layout">Создание базового макета</a></li>
+                <li><a class="text-muted" href="Step2.html#nav">Добавление навигации</a></li>
+                <li><a class="text-muted" href="Step2.html#icon">Добавление Glyphicons</a></li>
+                <li><a class="text-muted" href="Step2.html#panel">Добавление панели</a></li>
+                <li><a class="text-muted" href="Step2.html#jumb">Добавление Jumbotron</a></li>
             </ul>
         </div>
-        <div class="col-6 col-md">
-            <p><a href="#" class="text-light font-weight-bold">Шаг 3. Добавление контента</a></p>
+        <div class="col-6 col-md col-sm">
+            <p><a href="Step3.html" class="text-light font-weight-bold">Шаг 3. Добавление контента</a></p>
             <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="#">Добавление изображения</a></li>
-                <li><a class="text-muted" href="#">Добавление таблицы</a></li>
-                <li><a class="text-muted" href="#">Добавление видео</a></li>
-                <li><a class="text-muted" href="#">Завершение работы</a></li>
+                <li><a class="text-muted" href="Step3.html#img">Добавление изображения</a></li>
+                <li><a class="text-muted" href="Step3.html#table">Добавление таблицы</a></li>
+                <li><a class="text-muted" href="Step3.html#video">Добавление видео</a></li>
+                <li><a class="text-muted" href="Step3.html#end">Завершение работы</a></li>
             </ul>
         </div>
     </div>

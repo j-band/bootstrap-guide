@@ -1,36 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/main.css" rel="stylesheet">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Step3</title>
 </head>
-<body>
-<nav class="navbar navbar-main navbar-expand-sm">
-    <div class="container-fluid">
-        <div class="row justify-content-sm-start">
-            <a class="navbar-expand-sm" href="#">
-                <img src="./img/logo.png" width="30" height="50" alt="">
-            </a>
+<body class="bg-grey">
+
+<div class="navbar menu-fix justify-content-lg-between">
+    <div class="container-fluid ">
+        <div class="row col-12">
+            <div class="col-11">
+                <a href="#">
+                    <img src="./img/logo.png" width="30" height="50" alt="">
+                </a>
+            </div>
+            <div class="col-1">
+                <button type="button" class="btn btn-link navbar-toggle collapsed " data-toggle="modal"
+                        data-target="#menuModal">
+                    <i class="fa fa-bars bars" ></i>
+                </button>
+            </div>
+            <!-- FULLSCREEN MODAL CODE (.fullscreen) -->
+            <div class="modal fade fullscreen" id="menuModal" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="color:black;">
+                        <div class="modal-header" style="">
+                            <button type="button" class="close btn btn-link" data-dismiss="modal"
+                                    aria-hidden="true">
+                                <i class="fa fa-times" style="color:black;"></i>
+                            </button>
+                        </div>
+
+                        <div class="modal-body mt-5">
+                            <div class="col-12 p-0 m-0 row text-center">
+                                <div class="col-12">
+                                    <a href="index.html">
+                                        <img class="logo-menu" src="img/logo-menu.svg" alt="logo">
+                                        <p class="text-dark font-weight-bold"> Главная </p>
+                                    </a>
+                                </div>
+                                <div class=" col-12 m-0 p-0">
+
+                                    <ul class="col-12 row p-0 m-0 pl-4 pr-4 justify-content-around">
+                                        <li class="col-3 list-group text-left menu-item">
+                                            <a class="text-dark font-weight-bold m-4" href="Step1.html">
+                                                Шаг 1. Введение в Bootstrap
+                                            </a>
+                                            <ol class="menu-list">
+                                                <li><a class="text-dark" href="Step1.html#introduction">Введение в Bootstrap</a></li>
+                                                <li><a class="text-dark" href="Step1.html#adaptive">Адаптивный дизайн </a></li>
+                                                <li><a class="text-dark" href="Step1.html#advantages"> Преймущества Bootstrap</a></li>
+                                                <li><a class="text-dark" href="Step1.html#break">Визуальный Breakpoints </a>
+                                                </li>
+                                                <li><a class="text-dark" href="Step1.html#grid">Структура 12 столбцов</a></li>
+                                            </ol>
+                                        </li>
+                                        <li class="col-3 list-group text-left menu-item">
+                                            <a class="text-dark font-weight-bold m-4" href="Step2.html">
+                                                Шаг 2. Создание каркаса
+                                            </a>
+
+                                            <ol class="menu-list">
+                                                <li><a class="text-dark " href="Step2.html">Создание каркаса</a></li>
+                                                <li><a class="text-dark" href="Step2.html#frame">  Добавление Bootstrap</a>
+                                                </li>
+                                                <li><a class="text-dark" href="Step2.html#layout"> Создание базового макета </a></li>
+                                                <li><a class="text-dark" href="Step2.html#nav">Добавление навигации</a></li>
+                                                <li><a class="text-dark" href="Step2.html#icon">Добавление Glyphicons</a></li>
+                                                <li><a class="text-dark" href="Step2.html#panel">Добавление панели</a></li>
+                                                <li><a class="text-dark" href="Step2.html#jumb">Добавление Jumbotron</a></li>
+                                            </ol>
+                                        </li>
+                                        <li class="col-3 list-group text-left menu-item">
+                                            <a class="text-dark font-weight-bold m-4" href="Step3.html">
+                                                Шаг 3. Добавление контента
+                                            </a>
+                                            <ol class="menu-list">
+                                                <li><a class="text-dark" href="Step3.html#img"> Добавление изображения</a></li>
+                                                <li><a class="text-dark" href="Step3.html#table"> Добавление таблицы</a></li>
+                                                <li><a class="text-dark" href="Step3.html#video"> Добавление видео </a></li>
+                                                <li><a class="text-dark" href="Step3.html#end"> Завершение работы</a></li>
+                                            </ol>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div>
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.fullscreen -->
+
+
         </div>
     </div>
-</nav>
+</div>
 
 
 <div class="number">
     <img src="img/03.png" alt="number">
 </div>
-<div class="col-6 offset-3">
-    <h1 class="mt-5 pb-4 text-light">Шаг 3. Добавление контента </h1>
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3">
+    <h1 class="mt-5 line pb-4 text-light">Шаг 3. Добавление контента </h1>
 </div>
 
-<div class="col-6 offset-3 text-light">
-    <p class=" headline pt-3"><b> 1. Добавление отзывчивого изображения</b></p>
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
+    <p id="img" class=" headline pt-3"><b> 1. Добавление отзывчивого изображения</b></p>
     <p>
         Bootstrap предоставляет класс
         <kbd>.img-fluid</kbd> для создания адаптивных изображений. Этот класс делает их адаптивными для устройств разных
@@ -47,8 +130,8 @@
     </ul>
 </div>
 
-<div class="col-6 mt-5 mb-5 offset-3 code bg-secondary">
-<pre class="text-white offset-1 ">
+<div class="col-lg-6 mt-5 mb-5 offset-lg-3 col-md-12 col-sm-2 offset-sm-0 offset-md-0 offset-lg-3 code bg-secondary">
+<pre class="text-white offset-lg-1  offset-sm-0 offset-md-0">
     <code>
 &lt;!-- .img-fluid--&gt;
 &lt;img src=&quot;#&quot; class=&quot;img-fluid&quot; alt=&quot;image&quot;&gt;
@@ -66,7 +149,7 @@
 </pre>
 </div>
 
-<div class="col-8 mb-5 offset-2">
+<div class="col-lg-8 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-2 text-light">
     <p class="codepen" data-height="350" data-theme-id="dark" data-default-tab="html,result" data-user="yuliakalina"
        data-slug-hash="ZEbKydz"
        style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
@@ -79,8 +162,8 @@
 </div>
 
 
-<div class="col-6 offset-3 text-light">
-    <p class=" headline pt-3"><b> 2. Добавление отзывчивой таблицы</b></p>
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
+    <p id="table" class=" headline pt-3"><b> 2. Добавление отзывчивой таблицы</b></p>
     <p>
         Таблицы используются для отображения структурированных данных в виде строк и столбцов. Boostrap предоставляет
         класс <kbd>.table</kbd> для создания адаптивной таблицы. Класс <kbd>.table</kbd> определяет расположение таблицы
@@ -99,8 +182,8 @@
 </div>
 
 
-<div class="col-6 mt-5 mb-5 offset-3 code bg-secondary">
-<pre class="text-white offset-1 ">
+<div class="col-lg-6 mt-5 mb-5 offset-lg-3 col-md-12 col-sm-2 offset-sm-0 offset-md-0 offset-lg-3 code bg-secondary">
+<pre class="text-white offset-lg-1  offset-sm-0 offset-md-0">
     <code>
 &lt;div class=&quot;container&quot;&gt;
   &lt;h2&gt;Таблица&lt;/h2&gt;
@@ -137,10 +220,10 @@
 </div>
 
 
-<div class="col-8 mb-5 offset-2">
-    <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="yuliakalina"
+<div class="col-lg-8 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-2 text-light">
+    <p class="codepen" data-height="350" data-theme-id="dark" data-default-tab="html,result" data-user="yuliakalina"
        data-slug-hash="WNQjOJK"
-       style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+       style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
        data-pen-title="WNQjOJK">
   <span>See the Pen <a href="https://codepen.io/yuliakalina/pen/WNQjOJK">
   WNQjOJK</a> by Julia Kalinichenko (<a href="https://codepen.io/yuliakalina">@yuliakalina</a>)
@@ -150,8 +233,8 @@
 </div>
 
 
-<div class="col-6 offset-3 text-light">
-    <p class=" headline pt-3"><b> 3. Добавление отзывчивого видео</b></p>
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
+    <p id="video" class=" headline pt-3"><b> 3. Добавление отзывчивого видео</b></p>
     <p>
 
         Bootstrap предоставляет классы, чтобы сделать вставки видео или слайд-шоу на основе ширины родительского
@@ -176,8 +259,8 @@
     </ul>
 </div>
 
-<div class="col-6 mt-5 mb-5 offset-3 code bg-secondary">
-<pre class="text-white offset-1 ">
+<div class="col-lg-6 mt-5 mb-5 offset-lg-3 col-md-12 col-sm-2 offset-sm-0 offset-md-0 offset-lg-3 code bg-secondary">
+<pre class="text-white offset-lg-1  offset-sm-0 offset-md-0">
     <code>
   &lt;div class=&quot;embed-responsive embed-responsive-21by9&quot;&gt;
   &lt;iframe class=&quot;embed-responsive-item&quot;src=&quot;https://www.youtube.com/embed/2JMMnNOhDoc&quot;
@@ -189,7 +272,7 @@
 </div>
 
 
-<div class="col-6 offset-3 text-light">
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
     <p>
         Таким образом, у нас получилось встроенное видео с YouTube для компьютеров, планшетов и мобильных
         устройств.
@@ -199,8 +282,8 @@
 
 
 
-<div class="col-6 offset-3 text-light">
-    <p class="headline pt-3"><b> 4. Завершение работы</b></p>
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
+    <p id="end" class="headline pt-3"><b> 4. Завершение работы</b></p>
     <p>
         Мы использовали несколько компонентов для создания адаптивного веб-сайта. С помощью таких
         компонентов легко создавать адаптивные сайты, которые сейчас пользуються огромным спросом.</p>
@@ -221,7 +304,7 @@
 </div>
 
 <a href="https://github.com/j-band/bootstrap-guide">
-    <button type="button" class=" mt-5 mb-5 col-lg-2 btn btn-outline-light offset-7 ">
+    <button type="button" class=" mt-5 mb-5 col-lg-2 btn btn-outline-light offset-sm-0 offset-md-0 offset-lg-7 ">
         Посмотреть работу
     </button>
 </a>
@@ -237,33 +320,60 @@
         <div class="col-6 col-md">
             <p><a href="Step1.html" class="text-light font-weight-bold">Шаг 1. Введение в Bootstrap</a></p>
             <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="#">Адаптивный дизайн</a></li>
-                <li><a class="text-muted" href="#">Преймущества Bootstrap</a></li>
-                <li><a class="text-muted" href="#">Визуальный Breakpoints</a></li>
-                <li><a class="text-muted" href="#">Структура 12 столбцов</a></li>
+                <li><a class="text-muted" href="Step1.html#introduction">Введение в Bootstrap</a></li>
+                <li><a class="text-muted" href="Step1.html#adaptive">Адаптивный дизайн</a></li>
+                <li><a class="text-muted" href="Step1.html#advantages">Преймущества Bootstrap</a></li>
+                <li><a class="text-muted" href="Step1.html#break">Визуальный Breakpoints</a></li>
+                <li><a class="text-muted" href="Step1.html#grid">Структура 12 столбцов</a></li>
             </ul>
         </div>
         <div class="col-6 col-md">
             <p><a href="Step2.html" class="text-light font-weight-bold">Шаг 2. Создание каркаса</a></p>
             <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="#">Добавление Bootstrap в проект</a></li>
-                <li><a class="text-muted" href="#">Создание базового макета</a></li>
-                <li><a class="text-muted" href="#">Добавление навигации</a></li>
-                <li><a class="text-muted" href="#">Добавление Glyphicons</a></li>
-                <li><a class="text-muted" href="#">Добавление панели</a></li>
-                <li><a class="text-muted" href="#">Добавление Jumbotron</a></li>
+                <li><a class="text-muted" href="Step2.html#addboot">Добавление Bootstrap в проект</a></li>
+                <li><a class="text-muted" href="Step2.html#layout">Создание базового макета</a></li>
+                <li><a class="text-muted" href="Step2.html#nav">Добавление навигации</a></li>
+                <li><a class="text-muted" href="Step2.html#icon">Добавление Glyphicons</a></li>
+                <li><a class="text-muted" href="Step2.html#panel">Добавление панели</a></li>
+                <li><a class="text-muted" href="Step2.html#jumb">Добавление Jumbotron</a></li>
             </ul>
         </div>
         <div class="col-6 col-md">
-            <p><a href="#" class="text-light font-weight-bold">Шаг 3. Добавление контента</a></p>
+            <p><a href="Step3.html" class="text-light font-weight-bold">Шаг 3. Добавление контента</a></p>
             <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="#">Добавление изображения</a></li>
-                <li><a class="text-muted" href="#">Добавление таблицы</a></li>
-                <li><a class="text-muted" href="#">Добавление видео</a></li>
-                <li><a class="text-muted" href="#">Завершение работы</a></li>
+                <li><a class="text-muted" href="Step3.html#img">Добавление изображения</a></li>
+                <li><a class="text-muted" href="Step3.html#table">Добавление таблицы</a></li>
+                <li><a class="text-muted" href="Step3.html#video">Добавление видео</a></li>
+                <li><a class="text-muted" href="Step3.html#end">Завершение работы</a></li>
             </ul>
         </div>
     </div>
 </footer>
+
+
+
+
+
+
+
+
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+
+<script src="JS.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
 </body>
 </html>
