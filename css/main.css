@@ -15,16 +15,17 @@
     font-style: normal;
 }
 
-.bg-black{
-    background-color: black;
+.bg-custom-black{
+    background-color: black !important;
 }
 
 .bg-grey{
-    background-color: #242424;
+    background-color: #242424 !important;
 }
 
 .background {
-    height: 100vh;
+
+    height: 110vh;
     background-color: #929292;
     background-image: -webkit-linear-gradient(180deg, #929292 25%, #000000 100%);
     background-image: -moz-linear-gradient(180deg, #929292 25%, #000000 100%);
@@ -155,7 +156,7 @@ a:hover {
 
 @media (max-width: 480px){
     .fullscreen .modal-body ul {
-        padding: 30px 0 0 0;
+        padding: 0 0 0 0;
         overflow: auto;
     }
 
@@ -165,8 +166,6 @@ a:hover {
 
     .fullscreen .modal-body a {
         color: #333;
-        text-transform: uppercase;
-        font-weight: 700;
     }
 }
 
@@ -201,11 +200,7 @@ a:hover {
 kbd {
     background-color: #eee;
     border-radius: 3px;
-    border: 1px solid #b4b4b4;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
     color: #333;
-    display: inline-block;
-    font-size: .85em;
     font-weight: 700;
     line-height: 1;
     padding: 2px 4px;
@@ -226,3 +221,18 @@ kbd {
 .modal-backdrop.fade.show{
     display: none;
 }
+
+.menu-fix{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.line {
+    border-bottom: 2px solid white;
+}
+
+.top{
+    top: 10%;
+}
+
