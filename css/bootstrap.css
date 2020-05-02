@@ -6762,13 +6762,13 @@ button.bg-light:focus {
   background-color: #dae0e5 !important;
 }
 
-.bg-black {
+.bg-custom-black {
   background-color: #343a40 !important;
 }
 
-a.bg-black:hover, a.bg-black:focus,
-button.bg-black:hover,
-button.bg-black:focus {
+a.bg-custom-black:hover, a.bg-custom-black:focus,
+button.bg-custom-black:hover,
+button.bg-custom-black:focus {
   background-color: #1d2124 !important;
 }
 

@@ -16,114 +16,147 @@
 
 
 <div class="background">
-    <div class="navbar   menu-fix justify-content-lg-between">
-        <div class="container-fluid ">
-            <div class="row col-lg-12">
-                <div class="col-lg-11 col-md-11 ">
-                    <a href="#">
-                        <img src="./img/logo.png" width="30" height="50" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-1 col-md-1 ">
-                    <button type="button" class="btn btn-link navbar-toggle collapsed " data-toggle="modal"
-                            data-target="#menuModal">
-                        <i class="fa fa-bars bars"></i>
-                    </button>
-                </div>
-                <!-- FULLSCREEN MODAL CODE (.fullscreen) -->
-                <div class="modal fade fullscreen" id="menuModal" tabindex="-1" role="dialog"
-                     aria-labelledby="myModalLabel"
-                     aria-hidden="true">
-                    <div class="modal-dialog ">
-                        <div class="modal-content" style="color:black;">
-                            <div class="modal-header" style="">
-                                <button type="button" class="close btn btn-link" data-dismiss="modal"
-                                        aria-hidden="true">
-                                    <i class="fa fa-times" style="color:black;"></i>
-                                </button>
-                            </div>
+<!--    <div class="navbar   menu-fix justify-content-lg-between">-->
+<!--        <div class="container-fluid ">-->
+<!--            <div class="row col-lg-12">-->
+<!--                <div class="col-lg-11 col-md-11 ">-->
+<!--                    <a href="#">-->
+<!--                        <img src="./img/logo.png" width="30" height="50" alt="">-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--                <div class="col-lg-1 col-md-1 ">-->
+<!--                    <button type="button" class="btn btn-link navbar-toggle collapsed " data-toggle="modal"-->
+<!--                            data-target="#menuModal">-->
+<!--                        <i class="fa fa-bars bars"></i>-->
+<!--                    </button>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; FULLSCREEN MODAL CODE (.fullscreen) &ndash;&gt;-->
+<!--                <div class="modal fade fullscreen" id="menuModal" tabindex="-1" role="dialog"-->
+<!--                     aria-labelledby="myModalLabel"-->
+<!--                     aria-hidden="true">-->
+<!--                    <div class="modal-dialog ">-->
+<!--                        <div class="modal-content" style="color:black;">-->
+<!--                            <div class="modal-header" style="">-->
+<!--                                <button type="button" class="close btn btn-link" data-dismiss="modal"-->
+<!--                                        aria-hidden="true">-->
+<!--                                    <i class="fa fa-times" style="color:black;"></i>-->
+<!--                                </button>-->
+<!--                            </div>-->
 
-                            <div class="modal-body mt-5">
-                                <div class="col-12 p-0 m-0 row text-center">
-                                    <div class="col-12">
-                                        <a href="index.html">
-                                            <img class="logo-menu" src="img/logo-menu.svg" alt="logo">
-                                            <p class="text-dark font-weight-bold"> Главная </p>
-                                        </a>
-                                    </div>
-                                    <div class=" col-12 m-0 p-0">
+<!--                            <div class="modal-body mt-5">-->
+<!--                                <div class="col-12 p-0 m-0 row text-center">-->
+<!--                                    <div class="col-12">-->
+<!--                                        <a href="index.html">-->
+<!--                                            <img class="logo-menu" src="img/logo-menu.svg" alt="logo">-->
+<!--                                            <p class="text-dark font-weight-bold"> Главная </p>-->
+<!--                                        </a>-->
+<!--                                    </div>-->
+<!--                                    <div class=" col-12 m-0 p-0">-->
 
-                                        <ul class="col-12 row p-0 m-0 pl-4 pr-4 justify-content-around">
-                                            <li class="col-3 list-group text-left menu-item">
-                                                <a class="text-dark font-weight-bold m-4" href="Step1.html">
-                                                    Шаг 1. Введение в Bootstrap
-                                                </a>
-                                                <ol class="menu-list">
-                                                    <li><a class="text-dark" href="Step1.html#introduction">Введение в
-                                                        Bootstrap</a></li>
-                                                    <li><a class="text-dark" href="Step1.html#adaptive">Адаптивный
-                                                        дизайн </a></li>
-                                                    <li><a class="text-dark" href="Step1.html#advantages"> Преймущества
-                                                        Bootstrap</a></li>
-                                                    <li><a class="text-dark" href="Step1.html#break">Визуальный
-                                                        Breakpoints </a>
-                                                    </li>
-                                                    <li><a class="text-dark" href="Step1.html#grid">Структура 12
-                                                        столбцов</a></li>
-                                                </ol>
-                                            </li>
-                                            <li class="col-3 list-group text-left menu-item">
-                                                <a class="text-dark font-weight-bold m-4" href="Step2.html">
-                                                    Шаг 2. Создание каркаса
-                                                </a>
+<!--                                        <ul class="col-12 row p-0 m-0 pl-4 pr-4 justify-content-around">-->
+<!--                                            <li class="col-3 list-group text-left menu-item">-->
+<!--                                                <a class="text-dark font-weight-bold m-4" href="Step1.html">-->
+<!--                                                    Шаг 1. Введение в Bootstrap-->
+<!--                                                </a>-->
+<!--                                                <ol class="menu-list">-->
+<!--                                                    <li><a class="text-dark" href="Step1.html#introduction">Введение в-->
+<!--                                                        Bootstrap</a></li>-->
+<!--                                                    <li><a class="text-dark" href="Step1.html#adaptive">Адаптивный-->
+<!--                                                        дизайн </a></li>-->
+<!--                                                    <li><a class="text-dark" href="Step1.html#advantages"> Преймущества-->
+<!--                                                        Bootstrap</a></li>-->
+<!--                                                    <li><a class="text-dark" href="Step1.html#break">Визуальный-->
+<!--                                                        Breakpoints </a>-->
+<!--                                                    </li>-->
+<!--                                                    <li><a class="text-dark" href="Step1.html#grid">Структура 12-->
+<!--                                                        столбцов</a></li>-->
+<!--                                                </ol>-->
+<!--                                            </li>-->
+<!--                                            <li class="col-3 list-group text-left menu-item">-->
+<!--                                                <a class="text-dark font-weight-bold m-4" href="Step2.html">-->
+<!--                                                    Шаг 2. Создание каркаса-->
+<!--                                                </a>-->
 
-                                                <ol class="menu-list">
-                                                    <li><a class="text-dark " href="Step2.html">Создание каркаса</a>
-                                                    </li>
-                                                    <li><a class="text-dark" href="Step2.html#frame"> Добавление
-                                                        Bootstrap</a>
-                                                    </li>
-                                                    <li><a class="text-dark" href="Step2.html#layout"> Создание базового
-                                                        макета </a></li>
-                                                    <li><a class="text-dark" href="Step2.html#nav">Добавление
-                                                        навигации</a></li>
-                                                    <li><a class="text-dark" href="Step2.html#icon">Добавление
-                                                        Glyphicons</a></li>
-                                                    <li><a class="text-dark" href="Step2.html#panel">Добавление
-                                                        панели</a></li>
-                                                    <li><a class="text-dark" href="Step2.html#jumb">Добавление
-                                                        Jumbotron</a></li>
-                                                </ol>
-                                            </li>
-                                            <li class="col-3 list-group text-left menu-item">
-                                                <a class="text-dark font-weight-bold m-4" href="Step3.html">
-                                                    Шаг 3. Добавление контента
-                                                </a>
-                                                <ol class="menu-list">
-                                                    <li><a class="text-dark" href="Step3.html#img"> Добавление
-                                                        изображения</a></li>
-                                                    <li><a class="text-dark" href="Step3.html#table"> Добавление
-                                                        таблицы</a></li>
-                                                    <li><a class="text-dark" href="Step3.html#video"> Добавление
-                                                        видео </a></li>
-                                                    <li><a class="text-dark" href="Step3.html#end"> Завершение
-                                                        работы</a></li>
-                                                </ol>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-
-                                </div>
-                            </div><!-- /.modal-content -->
-                        </div>
-                    </div><!-- /.modal-dialog -->
-                </div><!-- /.fullscreen -->
+<!--                                                <ol class="menu-list">-->
+<!--                                                    <li><a class="text-dark " href="Step2.html">Создание каркаса</a>-->
+<!--                                                    </li>-->
+<!--                                                    <li><a class="text-dark" href="Step2.html#frame"> Добавление-->
+<!--                                                        Bootstrap</a>-->
+<!--                                                    </li>-->
+<!--                                                    <li><a class="text-dark" href="Step2.html#layout"> Создание базового-->
+<!--                                                        макета </a></li>-->
+<!--                                                    <li><a class="text-dark" href="Step2.html#nav">Добавление-->
+<!--                                                        навигации</a></li>-->
+<!--                                                    <li><a class="text-dark" href="Step2.html#icon">Добавление-->
+<!--                                                        Glyphicons</a></li>-->
+<!--                                                    <li><a class="text-dark" href="Step2.html#panel">Добавление-->
+<!--                                                        панели</a></li>-->
+<!--                                                    <li><a class="text-dark" href="Step2.html#jumb">Добавление-->
+<!--                                                        Jumbotron</a></li>-->
+<!--                                                </ol>-->
+<!--                                            </li>-->
+<!--                                            <li class="col-3 list-group text-left menu-item">-->
+<!--                                                <a class="text-dark font-weight-bold m-4" href="Step3.html">-->
+<!--                                                    Шаг 3. Добавление контента-->
+<!--                                                </a>-->
+<!--                                                <ol class="menu-list">-->
+<!--                                                    <li><a class="text-dark" href="Step3.html#img"> Добавление-->
+<!--                                                        изображения</a></li>-->
+<!--                                                    <li><a class="text-dark" href="Step3.html#table"> Добавление-->
+<!--                                                        таблицы</a></li>-->
+<!--                                                    <li><a class="text-dark" href="Step3.html#video"> Добавление-->
+<!--                                                        видео </a></li>-->
+<!--                                                    <li><a class="text-dark" href="Step3.html#end"> Завершение-->
+<!--                                                        работы</a></li>-->
+<!--                                                </ol>-->
+<!--                                            </li>-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
 
 
-            </div>
-        </div>
-    </div>
+<!--                                </div>-->
+<!--                            </div>&lt;!&ndash; /.modal-content &ndash;&gt;-->
+<!--                        </div>-->
+<!--                    </div>&lt;!&ndash; /.modal-dialog &ndash;&gt;-->
+<!--                </div>&lt;!&ndash; /.fullscreen &ndash;&gt;-->
+
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <div class="polygon ">
@@ -527,6 +560,21 @@
         </div>
     </div>
 </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
