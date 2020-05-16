@@ -1,145 +1,326 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link href="css/main.css" rel="stylesheet">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Step2</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+
+
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Step2</title>
 </head>
 <body class="bg-grey">
-
-<div class="navbar menu-fix justify-content-lg-between">
-    <div class="container-fluid ">
-        <div class="row col-12">
-            <div class="col-11">
-                <a href="#">
-                    <img src="./img/logo.png" width="30" height="50" alt="">
-                </a>
-            </div>
-            <div class="col-1">
-                <button type="button" class="btn btn-link navbar-toggle collapsed " data-toggle="modal"
-                        data-target="#menuModal">
-                    <i class="fa fa-bars bars" ></i>
-                </button>
-            </div>
-            <!-- FULLSCREEN MODAL CODE (.fullscreen) -->
-            <div class="modal fade fullscreen" id="menuModal" tabindex="-1" role="dialog"
-                 aria-labelledby="myModalLabel"
-                 aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content" style="color:black;">
-                        <div class="modal-header" style="">
-                            <button type="button" class="close btn btn-link" data-dismiss="modal"
-                                    aria-hidden="true">
-                                <i class="fa fa-times" style="color:black;"></i>
-                            </button>
-                        </div>
-
-                        <div class="modal-body mt-5">
-                            <div class="col-lg-12 p-0 m-0 row text-lg-center text-md-center">
-                                <div class="col-lg-12 ">
-                                    <a href="index.html">
-                                        <img class="logo-menu" src="img/logo-menu.svg" alt="logo">
-                                        <p class="text-dark font-weight-bold"> Главная </p>
-                                    </a>
-                                </div>
-                                <div class=" col-12 m-0 p-0">
-
-                                    <ul class="col-12 row p-0 m-0 pl-lg-4 pl-md-0 pr-md-0 pr-lg-4 justify-content-around">
-                                        <li class="col-lg-3 col-md-4 col-sm-4 list-group text-left menu-item">
-                                            <a class="text-dark font-weight-bold m-lg-4 "  href="Step1.html">
-                                                Шаг 1. Введение в Bootstrap
-                                            </a>
-                                            <ol class="menu-list pl-lg-5 pr-lg-5 pl-md-2 pr-md-2">
-                                                <li><a class="text-dark" href="Step1.html#introduction">Введение в Bootstrap</a></li>
-                                                <li><a class="text-dark" href="Step1.html#adaptive">Адаптивный дизайн </a></li>
-                                                <li><a class="text-dark" href="Step1.html#advantages"> Преймущества Bootstrap</a></li>
-                                                <li><a class="text-dark" href="Step1.html#break">Визуальный Breakpoints </a>
-                                                </li>
-                                                <li><a class="text-dark" href="Step1.html#grid">Структура 12 столбцов</a></li>
-                                            </ol>
-                                        </li>
-                                        <li class="col-3 list-group text-left menu-item">
-                                            <a class="text-dark font-weight-bold m-4" href="Step2.html">
-                                                Шаг 2. Создание каркаса
-                                            </a>
-
-                                            <ol class="menu-list">
-                                                <li><a class="text-dark " href="Step2.html">Создание каркаса</a></li>
-                                                <li><a class="text-dark" href="Step2.html#frame">  Добавление Bootstrap</a>
-                                                </li>
-                                                <li><a class="text-dark" href="Step2.html#layout"> Создание базового макета </a></li>
-                                                <li><a class="text-dark" href="Step2.html#nav">Добавление навигации</a></li>
-                                                <li><a class="text-dark" href="Step2.html#icon">Добавление Glyphicons</a></li>
-                                                <li><a class="text-dark" href="Step2.html#panel">Добавление панели</a></li>
-                                                <li><a class="text-dark" href="Step2.html#jumb">Добавление Jumbotron</a></li>
-                                            </ol>
-                                        </li>
-                                        <li class="col-3 list-group text-left menu-item">
-                                            <a class="text-dark font-weight-bold m-4" href="Step3.html">
-                                                Шаг 3. Добавление контента
-                                            </a>
-                                            <ol class="menu-list">
-                                                <li><a class="text-dark" href="Step3.html#img"> Добавление изображения</a></li>
-                                                <li><a class="text-dark" href="Step3.html#table"> Добавление таблицы</a></li>
-                                                <li><a class="text-dark" href="Step3.html#video"> Добавление видео </a></li>
-                                                <li><a class="text-dark" href="Step3.html#end"> Завершение работы</a></li>
-                                            </ol>
-                                        </li>
-                                    </ul>
-                                </div>
+<div id="top-section"></div>
 
 
-                            </div>
-                        </div><!-- /.modal-content -->
-                    </div>
-                </div><!-- /.modal-dialog -->
-            </div><!-- /.fullscreen -->
 
-
+<header class="header-transparent" id="header-main">
+  <nav class="navbar navbar-main navbar-expand-lg navbar-dark navbar-sticky sticky" id="navbar-main">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img alt="Image placeholder" height="50px" src="./assets/img/logo.png" id="navbar-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse"
+              aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navbar-collapse-overlay" id="navbar-main-collapse">
+        <div class="position-relative">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse"
+                  aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <svg class="bi bi-x-square" width="20px" height="20px" viewBox="0 0 16 16" fill="currentColor"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                    d="M14 1H2a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1V2a1 1 0 00-1-1zM2 0a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V2a2 2 0 00-2-2H2z"
+                    clip-rule="evenodd"/>
+              <path fill-rule="evenodd"
+                    d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z"
+                    clip-rule="evenodd"/>
+              <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z"
+                    clip-rule="evenodd"/>
+            </svg>
+          </button>
         </div>
+        <ul class="navbar-nav ml-lg-auto">
+          <li class="nav-item  d-block">
+            <a class="nav-link " href="index.html">Главная</a>
+          </li>
+          <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+            <a class="nav-link " href="Step1.html" aria-haspopup="true" aria-expanded="false">Шаг
+              01</a>
+            <div class="dropdown-menu dropdown-menu-md p-0">
+              <ul class="list-group p-lg-4">
+                <li class="dropdown dropdown-submenu">
+                  <a href="Step1.html" class=" list-group-item-action ">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/bootstrap.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Введение</h6>
+                        <p class="mb-0">Что такое Bootstrap</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown dropdown-submenu" data-toggle="hover">
+                  <a href="Step1.html#adaptive" class="list-group-item-action m-5  mb-0">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/adaptive.svg" class="img-fluid" style=height:20px alt="">
+                      </figure>
+                      <div class=ml-3>
+                        <h6 class="mb-0">Адаптивный дизайн</h6>
+                        <p class="mb-0">Концепция</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown dropdown-submenu" data-toggle="hover">
+                  <a href='Step1.html#advantages' class="list-group-item-action">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/advantage.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Преймущества</h6>
+                        <p class="mb-0">Топ фреймворк</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown dropdown-submenu" data-toggle="hover">
+                  <a href="Step1.html#break" class=" list-group-item-action m-5">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/breakpoint.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Breakpoint</h6>
+                        <p class="mb-0">Масштабирование блоков</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown dropdown-submenu" data-toggle="hover">
+                  <a href="Step1.html#grid" class="list-group-item-action ">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/grid.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Структура 12 столбцов</h6>
+                        <p class="mb-0">12-колоночная сетки</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+            <a class="nav-link  active" href="Step2.html" role="button" aria-haspopup="true"
+               aria-expanded="false">Шаг 02</a>
+            <div class="dropdown-menu dropdown-menu-md p-0">
+              <ul class="list-group p-lg-4">
+                <li class="dropdown dropdown-submenu">
+                  <a href="Step2.html#" class=" list-group-item-action ">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/frame.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Создание каркаса</h6>
+                        <p class="mb-0">Основные блоки</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown dropdown-submenu" data-toggle="hover">
+                  <a href="Step2.html#addboot" class=" list-group-item-action m-5">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/add.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Bootstrap</h6>
+                        <p class=mb-0>Подключение, загрузка</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown dropdown-submenu" data-toggle="hover">
+                  <a href="Step2.html#layout" class=" list-group-item-action ">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/layout.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Создание макета</h6>
+                        <p class="mb-0">Базовый макета</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown dropdown-submenu" data-toggle="hover">
+                  <a href="Step2.html#nav" class=" list-group-item-action m-5">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/nav.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Навигация</h6>
+                        <p class="mb-0">Навигационная панель </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown dropdown-submenu" data-toggle="hover">
+                  <a href="Step2.html#icon" class=" list-group-item-action ">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/icon.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Font Awesome</h6>
+                        <p>Библиотека иконок</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown dropdown-submenu" data-toggle="hover">
+                  <a href="Step2.html#panel" class=" list-group-item-action">
+                    <div class="d-flex mt-2">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/panel.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Панели</h6>
+                        <p class="mb-0">Header; body; footer</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item dropdown dropdown-animate" data-toggle=hover>
+            <a class="nav-link" href="Step3.html" role="button" aria-haspopup="true"
+               aria-expanded="false">Шаг 03</a>
+            <div class="dropdown-menu dropdown-menu-md p-0">
+              <ul class="list-group p-lg-4">
+                <li class="dropdown dropdown-submenu">
+                  <a href="Step3.html" class=" list-group-item-action">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/content.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Контент</h6>
+                        <p class="mb-0">Добавление контента</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown dropdown-submenu" data-toggle="hover">
+                  <a href="Step3.html#img" class=" list-group-item-action m-5">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/img.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Изображения</h6>
+                        <p class="mb-0">Адаптация изображения</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown dropdown-submenu" data-toggle="hover">
+                  <a href="Step3.html#table" class=" list-group-item-action">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/table.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Таблица</h6>
+                        <p class="mb-0">Адаптация таблицы</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown dropdown-submenu" data-toggle="hover">
+                  <a href="Step3.html#video" class="list-group-item-action m-5">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/video.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Видео</h6>
+                        <p class="mb-0">Адаптиция видео</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown dropdown-submenu" data-toggle="hover">
+                  <a href="Step3.html#end" class="list-group-item-action">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/end.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Завершение</h6>
+                        <p class="mb-0">Выводы и итоги</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-</div>
-
+  </nav>
+</header>
 
 <div class="number">
-    <img src="img/02.png" alt="number">
+  <img src="./assets/img/02.png" alt="number">
 </div>
 <div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 ">
-    <h1 class="mt-5 line pb-4 text-light">Шаг 2. Создание каркаса </h1>
+  <h1 class="indentation line pb-4 text-light">Шаг 2. Создание каркаса </h1>
 </div>
 
 <div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
-    <p id="frame" class="headline pt-3"><b>1. Создание каркаса</b></p>
-    <p>
-        Под каркасом понимаются самые основные блоки, которые разделяют содержимое друг от друга. Самый
-        простой пример: шапка – блок слева – блок справа и подвал (футер). В этих блоках в свою очередь может быть очень
-        много других, вложенных элементов, но они уже являются дополнительной разметкой, которая добавляется на
-        следующем
-        этапе.
-    </p>
+  <p id="frame" class="headline pt-3"><b>1. Создание каркаса</b></p>
+  <p>
+    Под каркасом понимаются самые основные блоки, которые разделяют содержимое друг от друга. Самый
+    простой и базовый пример: шапка – блок слева – блок справа и подвал (футер). В этих блоках в свою очередь может быть
+    очень
+    много других, вложенных элементов, но они уже являются дополнительной разметкой, которая добавляется на
+    следующем
+    этапе.
+  </p>
 </div>
 
 <div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-m-0 offset-lg-3 text-light">
-    <p id="addboot" class="headline pt-3"><b> 2. Добавление Bootstrap в проект</b></p>
-    <p>
-        Мы будем создавать наш сайт с помощью Web Storm. Если у вас нет Web Storm, вы можете выбрать любой редактор на
-        ваш выбор.
-    </p>
-    <p>
-        Если вы хотите скачать и вставить Bootstrap самостоятельно, вы можете перейдите на <a
-            class="text-white font-weight-bold"
-            href="https://getbootstrap.com/docs/4.4/getting-started/introduction/"> официальный сайт Bootstrap</a>
-        и скачать его там.
-    </p>
-    <p>
-        Если вы не хотите загружать Bootstrap самостоятельно, вы можете включить его из CDN (Content
-        Delivery Network). MaxCDN обеспечивает поддержку CDN для CSS и JavaScript Bootstrap. Вы также можете включить
-        jQuery.
-    </p>
+  <p id="addboot" class="headline pt-3"><b> 2. Добавление Bootstrap в проект</b></p>
+  <p>
+    Мы будем создавать наш сайт с помощью Web Storm. Вы же можете выбрать любой редактор на
+    ваш выбор.
+  </p>
+  <p>
+    Если вы хотите скачать и добавить Bootstrap самостоятельно, вы можете перейдите на <a
+      class="text-white font-weight-bold"
+      href="https://getbootstrap.com/docs/4.4/getting-started/introduction/"> официальный сайт Bootstrap</a>
+    и скачать его там.
+  </p>
+  <p>
+    Если вы не хотите загружать Bootstrap самостоятельно, вы можете включить его из CDN (Content
+    Delivery Network). MaxCDN обеспечивает поддержку CDN для CSS и JavaScript Bootstrap. Вы также можете включить
+    jQuery.
+  </p>
 </div>
 
 
@@ -174,19 +355,19 @@ crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 
 
 <div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
-    <p id="layout" class="headline pt-3"><b> 3. Создание базового макета</b></p>
-    <p>
-        В первую очередь, нам необходимо создать новую HTML-страницу <kbd>index.html</kbd>, после создания добавляем
-        следующий код.
-    </p>
-    <p>
-        Так же, не забудьте подключить <kbd>bootstrap.css</kbd> в <kbd> head </kbd> страницы.
-    </p>
-    <p>
-        А так же добавить ссылки на <kbd>jQuery-3.5.0.js</kbd> и <kbd>bootstrap.js</kbd> внизу тега body. Обычно
-        загружают скрипт внизу страницы,
-        чтобы улучшить время загрузки страницы, так как нам нужно, чтобы HTML и CSS загружались первыми.
-    </p>
+  <p id="layout" class="headline pt-3"><b> 3. Создание базового макета</b></p>
+  <p>
+    В первую очередь, нам необходимо создать новую HTML-страницу <kbd>index.html</kbd>, после создания добавляем
+    следующий код, это как раз и есть базовая структура.
+  </p>
+  <p>
+    Так же, не забудьте подключить <kbd>bootstrap.css</kbd> в <kbd>head</kbd> страницы.
+  </p>
+  <p>
+    А так же добавить ссылки на <kbd>jQuery-3.5.0.js</kbd> и <kbd>bootstrap.js</kbd> внизу тега body. Обычно
+    загружают скрипт внизу страницы,
+    чтобы улучшить время загрузки страницы, так как будет лучше, если HTML и CSS загрузяться первыми.
+  </p>
 
 </div>
 
@@ -212,15 +393,15 @@ crossorigin=&quot;anonymous&quot;&gt;
     &lt;/header&gt;
     &lt;section class=&quot;container&quot; &gt;
         &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-md-3 Nav&quot;&gt;
-        Навигация
-        &lt;/div&gt;
-        &lt;div class=&quot;col-md-6 content&quot;&gt;
-        Область содержимого
-        &lt;/div&gt;
-        &lt;div class=&quot;col-md-3 reletedContent&quot;&gt;
-        Контент
-        &lt;/div&gt;
+          &lt;div class=&quot;col-3 Nav&quot;&gt;
+          Навигация
+          &lt;/div&gt;
+          &lt;div class=&quot;col-6 content&quot;&gt;
+          Область содержимого
+          &lt;/div&gt;
+          &lt;div class=&quot;col-3 reletedContent&quot;&gt;
+          Контент
+          &lt;/div&gt;
         &lt;/div&gt;
     &lt;/section&gt;
     &lt;footer class=&quot;container&quot;&gt;
@@ -244,52 +425,38 @@ crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 </pre>
 </div>
 
-<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
-    <p>
-        Эта строка обеспечивает правильное отображение веб-страницы на мобильных устройствах.
-    </p>
-</div>
-
-<div class="col-lg-6 mt-5 mb-5 offset-lg-3 col-md-12 col-sm-2 offset-sm-0 offset-md-0 offset-lg-3 code bg-secondary">
-<pre class="text-white offset-lg-1  offset-sm-0 offset-md-0">
-    <code>
-&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
-initial-scale=1, maximum-scale=1, user-scalable=no&quot;&gt;
-</code>
-</pre>
-</div>
 
 <div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
-    <p>
-        Наш код создает разделы
-        <kbd>&lt;header&gt;</kbd>
-        <kbd>&lt;footer&gt;</kbd> и основной контейнер. Мы добавили класс <kbd>.container</kbd> к заголовку, всему
-        содержимому и подвалу.
-    </p>
-    <p>
-        Внутри раздела добавили <kbd>&lt;div&gt;</kbd>с классом <kbd>.row</kbd>
-    </p>
-    <p>
-        Внутри класса <kbd>.row</kbd> добавили 3 класса столбцов для навигации и всего контента.
-        Также определены классы <kbd>.col-md-3, col-md-6, col-md-3</kbd> соответственно. Эти классы разделят общую
-        структуру
-        столбцов в соотношении 3: 6: 3.
-    </p>
-    <p>
-        Таким образом, навигация займет первые 3 столбца, область основного контента займет следующие 6 столбцов,
-        а остальное содержимое займет последние 3 столбца.
-    </p>
+  <p>
+    Наш код создает разделы
+    <kbd>&lt;header&gt;</kbd>
+    <kbd>&lt;footer&gt;</kbd> и основной контейнер. Мы добавили класс <kbd>.container</kbd> к заголовку, всему
+    содержимому и подвалу.
+  </p>
+  <p>
+    Внутри раздела добавили <kbd>&lt;div&gt;</kbd>с классом <kbd>.row</kbd>
+  </p>
+  <p>
+    Внутри класса <kbd>.row</kbd> добавили 3 класса столбцов для навигации и всего контента.
+    Также определены классы <kbd>.col-3, col-6, col-3</kbd> соответственно. Эти классы разделят общую
+    структуру
+    столбцов в соотношении 3:6:3.
+  </p>
+  <p>
+    Таким образом, навигация займет первые 3 столбца, область основного контента займет следующие 6 столбцов,
+    а остальное содержимое займет последние 3 столбца.
+  </p>
 </div>
 
 
 <div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
-    <p id="nav" class="headline pt-3"><b> 4. Добавление навигации</b></p>
-    <p>
-        Bootstrap предоставляет компонент <kbd>Navbar</kbd> для отображения элемента навигации. Компонент навигационной
-        панели
-        Bootstrap содержит кнопку-переключатель (3 маленькие горизонтальные линии справа) для отображения и скрытия
-        элементов навигации.
-    </p>
+  <p id="nav" class="headline pt-3"><b> 4. Добавление навигации</b></p>
+  <p>
+    Bootstrap предоставляет компонент <kbd>Navbar</kbd> для отображения элемента навигации. Компонент навигационной
+    панели
+    Bootstrap содержит кнопку-переключатель (3 маленькие горизонтальные линии справа) для отображения и скрытия
+    элементов навигации.
+  </p>
 </div>
 
 
@@ -323,118 +490,163 @@ initial-scale=1, maximum-scale=1, user-scalable=no&quot;&gt;
 </pre>
 </div>
 
-<div class="col-lg-8 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-2 text-light">
-    <p class="codepen" data-height="350" data-theme-id="dark" data-default-tab="html,result" data-user="yuliakalina"
-       data-slug-hash="gOaWWWO"
-       style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
-       data-pen-title="gOaWWWO">
+<div class=" mb-5 col-lg-8 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-2 text-light">
+  <p class="codepen" data-height="350" data-theme-id="dark" data-default-tab="html,result" data-user="yuliakalina"
+     data-slug-hash="gOaWWWO"
+     style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+     data-pen-title="gOaWWWO">
   <span>See the Pen <a href="https://codepen.io/yuliakalina/pen/gOaWWWO">
   gOaWWWO</a> by Julia Kalinichenko (<a href="https://codepen.io/yuliakalina">@yuliakalina</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
-    </p>
-    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+  </p>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 </div>
 
 
 <div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
-    <p>
-        В данном примере, использовано несколько классов для <kbd> .navbar</kbd>
-    </p>
-    <ul class="p-2">
-        <li>
-            .navbar-toggler для использования с нашим плагином коллапса и другими способами переключения навигации.
-        </li>
-        <li>
-            Навбарам требуется перенос <kbd>.navbar</kbd> с <kbd>.navbar-expand {-sm | -md | -lg | -xl}</kbd> для
-            адаптивных классов свертывания и цветовой схемы.
-
-        </li>
-        <li>
-            Элемент
-            <kbd> &lt;/div&gt;</kbd> с <kbd>.navbar-collapse</kbd> состоит из ссылок и элемента управления формы для
-            поиска.
-        </li>
-    </ul>
+  <p>
+    В данном примере, использовано несколько классов для <kbd>.navbar</kbd>
+  </p>
+  <ul class="p-2">
+    <li>
+      <kbd>.navbar-toggler</kbd> для использования с нашим JS-«плагином свертывания» и других изменяющихся состояний
+      навигации.
+    </li>
+    <li>
+      Навбар требуют «обертки» из классов <kbd>.navbar</kbd> с <kbd>.navbar-expand {-sm | -md | -lg | -xl}</kbd> для
+      адаптивных классов свертывания.
+    </li>
+    <li>
+      Элемент
+      <kbd> &lt;/div&gt;</kbd> с <kbd>.collapse.navbar-collapse</kbd> для группирования и скрытия содержимого навбара на
+      определенном брейкпойнте родителя.
+    </li>
+  </ul>
 
 </div>
 
 
 <div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
-    <p id="icon" class="headline pt-3"><b> 4. Добавление Glyphicons</b></p>
-    <p>
-        Glyphicon - это библиотека значков, которая использует символы Юникода для отображения значка. Glyphicon
-        предоставляют разные классы для представления разных значков. Все glyphicon являются платными, но с помощью
-        Bootstrap мы
-        можем использовать некоторые из них бесплатно.
+  <p id="icon" class="headline pt-3"><b> 4. Добавление Font Awesome </b></p>
+  <p>
+    Font Awesome - это набор шрифтов и иконок, основанный на CSS и LESS. Он был создан для использования с
+    Bootstrap, а позже был включен в BootstrapCDN.
+  </p>
+  <p>
+    После того, как вы приступите к работе, вы можете разместить иконки Font Awesome практически в любом месте, используя префикс <kbd>fa</kbd> и имя иконки.
+    Font Awesome предназначен для использования со встроенными элементами (для краткости используться тег
+    <kbd>&lt;i&gt;</kbd> (i -icon), но
+    использование <kbd>&lt;span&gt;</kbd> более семантически правильно).
+  </p>
+</div>
 
-    </p>
-    <p>
-        Из соображений производительности для всех значков требуется базовый класс и отдельный класс значков.Чтобы
-        создать иконку, нам просто нужно добавить элемент <kbd>&lt;/span&gt;</kbd> и предоставить 2 класса. Одним
-        из них является <kbd>.glyphicon,</kbd> а другой - класс <kbd>.glyphicon- *icon.</kbd>
-    </p>
-    <p>
-        Чтобы
-        использовать, поместите следующий код в любом месте. Не забудьте оставить пробел между значком и текстом для
-        правильного заполнения.
-    </p>
+<div class="col-lg-6 mt-5 mb-5 offset-lg-3 col-md-12 col-sm-2 offset-sm-0 offset-md-0 offset-lg-3 code bg-secondary">
+<pre class="text-white offset-lg-1  offset-sm-0 offset-md-0">
+    <code>
+&lt;i class=&quot;fa fa-heart fa-lg&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;fa fa-heart fa-2x&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;fa fa-heart fa-3x&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;fa fa-heart fa-4x&quot;&gt;&lt;/i&gt;
+</code>
+</pre>
+</div>
+
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
+  <p>
+    Приведенные строки создадут значки сердца разных размеров. Полный список классов значков доступен <a
+      class="text-white font-weight-bold" href="https://fontawesome.com/">здесь.</a>
+  </p>
+</div>
+
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
+  <p>
+    Если вы измените размер шрифта контейнера иконки, иконка станет больше. То же самое касается цвета, тени и всего,
+    что наследуется с помощью CSS.
+  </p>
+</div>
+
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
+  <p>
+    Вы можете поворачивать, анимировать, добавлять границы, растягивать, заменять маркеры.
+  </p>
+
+  <ul class="p-2">
+    <li>
+      Чтобы произвольно вращать и переворачивать значки, используйте классы <kbd>fa-rotate- *</kbd> и <kbd>fa-flip- *</kbd>.
+    </li>
+    <li>
+      Используйте класс <kbd>fa-spin</kbd>, чтобы повернуть любой значок, и используйте <kbd>fa-pulse</kbd>, чтобы он
+      вращался с 8 шагами.
+      Хорошо работает с <kbd>fa-spinner, fa-refresh и fa-cog.</kbd>
+    </li>
+    <li>
+      Используйте <kbd>fa-border</kbd> и <kbd>fa-pull-right</kbd> или <kbd>fa-pull-left</kbd> для простых цитат или
+      значков статей.
+    </li>
+    <li>
+      Используйте <kbd>fa-ul</kbd> и <kbd>fa-li</kbd> для простой замены маркеров по умолчанию в неупорядоченных
+      списках.
+    </li>
+    <li>
+      Используйте <kbd>fa-fw</kbd>, чтобы установить значки с фиксированной шириной. Отлично подходит для использования при разной
+    ширине иконки. Особенно полезно в таких вещах, как навигационные списки и группы списков.
+    </li>
+  </ul>
 </div>
 
 
 <div class="col-lg-6 mt-5 mb-5 offset-lg-3 col-md-12 col-sm-2 offset-sm-0 offset-md-0 offset-lg-3 code bg-secondary">
 <pre class="text-white offset-lg-1  offset-sm-0 offset-md-0">
     <code>
-&lt;span class=&quot;glyphicon glyphicon-home&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+&lt;div class=&quot;list-group&quot;&gt;
+  &lt;a class=&quot;list-group-item&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-user fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; О нас&lt;/a&gt;
+  &lt;a class=&quot;list-group-item&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-download fa-fw&quot; aria-hidden=&quot;true&quot;&gt;
+&lt;/i&gt; Скачать&lt;/a&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&quot;fa-3x&quot;&gt;
+    &lt;i class=&quot;fas fa-spinner fa-pulse&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;fas fa-cog fa-spin&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;fas fa-spinner fa-spin&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;
 </code>
 </pre>
 </div>
 
-<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
-    <p>
-        Приведенная выше строка создаст значок дома. Полный список классов значков доступен <a
-            class="text-white font-weight-bold" href="https://getbootstrap.com/docs/3.3/components/">здесь.</a>
-    </p>
+<div class="container my-5 col-lg-12 row offset-lg-3">
+      <div class="list-group col-lg-2">
+        <a class="list-group-item text-dark" href="#"><i class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp; О нас</a>
+        <a class="list-group-item text-dark" href="#"><i class="fa fa-download fa-fw" aria-hidden="true">
+        </i> Скачать</a>
+      </div>
+      <div class="fa-3x icons ">
+        <i class="fas fa-spinner fa-pulse"></i>
+        <i class="fas fa-cog fa-spin"></i>
+        <i class="fas fa-spinner fa-spin"></i>
+      </div>
 </div>
-
 <div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
-    <p>
-        Используйте их в кнопках, группах кнопок для панели инструментов, навигации или ввода с префиксной формой.
-    </p>
-</div>
-
-
-<div class="col-lg-6 mt-5 mb-5 offset-lg-3 col-md-12 col-sm-2 offset-sm-0 offset-md-0 offset-lg-3 code bg-secondary">
-<pre class="text-white offset-lg-1  offset-sm-0 offset-md-0">
-    <code>
-&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg&quot;&gt;
-  &lt;span class=&quot;glyphicon glyphicon-book&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; Book
-&lt;/button&gt;
-</code>
-</pre>
-</div>
-
-
-<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
-    <p id="panel" class="headline pt-3"><b> 5. Добавление панели</b></p>
-    <p>
-        Панели являются элементами контейнера и используются для хранения другого содержимого. Иногда нам нужно
-        отобразить некоторый контент внутри окна, тогда мы можем использовать панели. Bootstrap предоставляет отзывчивые
-        панели.
-    </p>
-    <p>
-        Панель состоит из 3 частей
-    </p>
-    <ul class="p-2">
-        <li>
-            <b>Заголовок</b> - определение заголовка панели.
-        </li>
-        <li>
-            <b> Тело</b> - содержит основной контент.
-        </li>
-        <li>
-            <b>Подвал (footer)</b>
-        </li>
-    </ul>
+  <p id="panel" class="headline pt-3"><b> 5. Добавление панели</b></p>
+  <p>
+    Панели являются элементами контейнера и используются для хранения другого содержимого. Иногда нам нужно
+    отобразить некоторый контент внутри окна, тогда мы можем использовать панели. Bootstrap предоставляет отзывчивые
+    панели.
+  </p>
+  <p>
+    Панель состоит из 3 частей
+  </p>
+  <ul class="p-2">
+    <li>
+      <b>Заголовок</b> - определение заголовка панели.
+    </li>
+    <li>
+      <b> Тело</b> - содержит основной контент.
+    </li>
+    <li>
+      <b>Подвал (footer)</b>
+    </li>
+  </ul>
 </div>
 
 
@@ -451,8 +663,6 @@ initial-scale=1, maximum-scale=1, user-scalable=no&quot;&gt;
     &lt;/div&gt;
       &lt;div class=&quot;panel-footer&quot;&gt;Панель Подвал&lt;/div&gt;
 &lt;div class=&quot;panel panel-primary&quot;&gt;
-
-
       &lt;div class=&quot;panel-heading&quot;&gt;Панель главного класса&lt;/div&gt;
       &lt;div class=&quot;panel-body&quot;&gt;Панель Контент&lt;/div&gt;
     &lt;/div&gt;
@@ -462,125 +672,104 @@ initial-scale=1, maximum-scale=1, user-scalable=no&quot;&gt;
 
 
 <div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
-    <ul class="p-2">
-        <li>
-            Используйте класс <kbd>.panel-heading</kbd> для создания заголовка панели.
-        </li>
-        <li>
-            Используйте класс <kbd>.panel-body</kbd> для создания тела панели.
-        </li>
-        <li>
-            Используйте класс <kbd>.panel-footer</kbd> для создания панели подвала.
-        </li>
-        <li>
-            Чтобы сгруппировать много панелей вместе, оберните &lt;/div&gt;классом <kbd>.panel-group</kbd> вокруг них.
-        </li>
-    </ul>
+  <ul class="p-2">
+    <li>
+      Используйте класс <kbd>.panel-heading</kbd> для создания заголовка панели.
+    </li>
+    <li>
+      Используйте класс <kbd>.panel-body</kbd> для создания тела панели.
+    </li>
+    <li>
+      Используйте класс <kbd>.panel-footer</kbd> для создания панели подвала.
+    </li>
+    <li>
+      Чтобы сгруппировать много панелей вместе, оберните &lt;/div&gt;классом <kbd>.panel-group</kbd> вокруг них.
+    </li>
+  </ul>
 </div>
 
 <div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
-    <p>
-        Чтобы раскрасить панель, используйте контекстные классы <kbd>.panel-default, .panel-primary, .panel-success,
-        .panel-info, .panel-warning или .panel-danger</kbd>
-    </p>
+  <p>
+    Чтобы раскрасить панель, используйте контекстные классы <kbd>.panel-default, .panel-primary, .panel-success,
+    .panel-info, .panel-warning или .panel-danger</kbd>
+  </p>
 </div>
 
-<div class="col-lg-8 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-2 text-light">
-    <p class="codepen" data-height="350" data-theme-id="dark" data-default-tab="html,result" data-user="yuliakalina"
-       data-slug-hash="OJymgMm"
-       style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
-       data-pen-title="OJymgMm">
+<div class="mb-5 mt-5 col-lg-8 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-2 text-light">
+  <p class="codepen" data-height="350" data-theme-id="dark" data-default-tab="html,result" data-user="yuliakalina"
+     data-slug-hash="OJymgMm"
+     style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+     data-pen-title="OJymgMm">
   <span>See the Pen <a href="https://codepen.io/yuliakalina/pen/OJymgMm">
   OJymgMm</a> by Julia Kalinichenko (<a href="https://codepen.io/yuliakalina">@yuliakalina</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
-    </p>
-    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+  </p>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 </div>
+
 
 
 <div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
-    <p id="jumb" class="headline pt-3"><b> 6. Добавление Jumbotron</b></p>
-    <p>
-        Jumbotron используется для отображения ведущего текста на веб-странице. Мы можем использовать jumbotron,
-        чтобы
-        выделить некоторую информацию на странице. Bootstrap предоставляет класс .jumbotron для создания компонента
-        jumbotron.
-    </p>
-</div>
-
-
-<div class="col-lg-6 mt-5 mb-5 offset-lg-3 col-md-12 col-sm-2 offset-sm-0 offset-md-0 offset-lg-3 code bg-secondary">
-<pre class="text-white offset-lg-1  offset-sm-0 offset-md-0">
-    <code>
-  &lt;div class=&quot;jumbotron&quot;&gt;
-     &lt;h1 class=&quot;display-4&quot;&gt;Bootstrap&lt;/h1&gt;
-        &lt;p class=&quot;lead&quot;&gt;
-            Bootstrap - это фреймворк HTML, CSS и JavaScript для разработки
-            адаптивных мобильных веб-сайтов.
-            Bootstrap делает разработку веб-интерфейса быстрее и проще.
-            Это сделано для людей всех уровней квалификации,
-            устройств всех форм и проектов всех размеров.
-        &lt;/p&gt;
-    &lt;p class=&quot;lead&quot;&gt;
-    &lt;a class=&quot;btn btn-primary btn-dark&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Узнать больше&lt;/a&gt;
-  &lt;/p&gt;
-&lt;/div&gt;
-</code>
-</pre>
-</div>
-
-<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
-    <p>
-        Теперь мы готовы приступить к следующему шагу.
-    </p>
+  <p>
+    Теперь мы готовы приступить к следующему шагу.
+  </p>
 </div>
 
 
 <a href="Step3.html">
-    <button type="button" class=" mt-5 mb-5 col-lg-2 btn btn-outline-light offset-sm-0 offset-md-0 offset-lg-7 ">
-        Готово! Следующий шаг
-    </button>
+  <button type="button" class=" mt-5 mb-5 col-lg-2 btn btn-outline-light offset-sm-0 offset-md-0 offset-lg-7 ">
+    Готово! Следующий шаг
+  </button>
 </a>
 
+<div class="button-top">
+  <a href="#top-section">
+    <button type="button" class="btn btn-lg btn-dark rounded-circle shadow-lg">
+      <i class="fas fa-angle-up"></i>
+    </button>
+  </a>
+</div>
 
 <footer class="container py-5">
-    <div class="row">
-        <div class="col-12 col-md">
-            <a href="index.html"> <img class="d-block mb-2" src="img/logo-muted.png" width="10%" alt="logo"></a>
-            <small class="d-block text-muted">© Юлия Калиниченко</small>
-            <small class="d-block ml-3 text-muted">2020</small>
-        </div>
-        <div class="col-6 col-md">
-            <p><a href="Step1.html" class="text-light font-weight-bold">Шаг 1. Введение в Bootstrap</a></p>
-            <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="Step1.html#introduction">Введение в Bootstrap</a></li>
-                <li><a class="text-muted" href="Step1.html#adaptive">Адаптивный дизайн</a></li>
-                <li><a class="text-muted" href="Step1.html#advantages">Преймущества Bootstrap</a></li>
-                <li><a class="text-muted" href="Step1.html#break">Визуальный Breakpoints</a></li>
-                <li><a class="text-muted" href="Step1.html#grid">Структура 12 столбцов</a></li>
-            </ul>
-        </div>
-        <div class="col-6 col-md">
-            <p><a href="Step2.html" class="text-light font-weight-bold">Шаг 2. Создание каркаса</a></p>
-            <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="Step2.html#addboot">Добавление Bootstrap в проект</a></li>
-                <li><a class="text-muted" href="Step2.html#layout">Создание базового макета</a></li>
-                <li><a class="text-muted" href="Step2.html#nav">Добавление навигации</a></li>
-                <li><a class="text-muted" href="Step2.html#icon">Добавление Glyphicons</a></li>
-                <li><a class="text-muted" href="Step2.html#panel">Добавление панели</a></li>
-                <li><a class="text-muted" href="Step2.html#jumb">Добавление Jumbotron</a></li>
-            </ul>
-        </div>
-        <div class="col-6 col-md">
-            <p><a href="Step3.html" class="text-light font-weight-bold">Шаг 3. Добавление контента</a></p>
-            <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="Step3.html#img">Добавление изображения</a></li>
-                <li><a class="text-muted" href="Step3.html#table">Добавление таблицы</a></li>
-                <li><a class="text-muted" href="Step3.html#video">Добавление видео</a></li>
-                <li><a class="text-muted" href="Step3.html#end">Завершение работы</a></li>
-            </ul>
-        </div>
+  <div class="row">
+    <div class="col-12 col-md col-sm">
+      <a href="index.html"> <img class="d-block mb-2 " src="./assets/img/logo-muted.png" width="10%" alt="logo"></a>
+      <a class="text-muted" href="https://github.com/j-band/bootstrap-guide" target="_blank">
+        <small class="d-block">© Юлия Калиниченко</small>
+      </a>
+      <small class="d-block ml-3 text-muted mb-4">2020</small>
     </div>
+    <div class="col-6 col-md col-sm">
+      <p><a href="Step1.html" class="text-light font-weight-bold">Шаг 1. Введение в Bootstrap</a></p>
+      <ul class="list-unstyled small">
+        <li><a class="text-muted " href="Step1.html#introduction">Введение в Bootstrap</a></li>
+        <li><a class="text-muted" href="Step1.html#adaptive">Адаптивный дизайн</a></li>
+        <li><a class="text-muted" href="Step1.html#advantages">Преймущества Bootstrap</a></li>
+        <li><a class="text-muted" href="Step1.html#break">Визуальный Breakpoints</a></li>
+        <li><a class="text-muted" href="Step1.html#grid">Структура 12 столбцов</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md col-sm">
+      <p><a href="Step2.html" class="text-light font-weight-bold">Шаг 2. Создание каркаса</a></p>
+      <ul class="list-unstyled small">
+        <li><a class="text-muted" href="Step2.html#addboot">Добавление Bootstrap</a></li>
+        <li><a class="text-muted" href="Step2.html#layout">Создание базового макета</a></li>
+        <li><a class="text-muted" href="Step2.html#nav">Добавление навигации</a></li>
+        <li><a class="text-muted" href="Step2.html#icon">Добавление Font Awesome</a></li>
+        <li><a class="text-muted" href="Step2.html#panel">Добавление панели</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md col-sm">
+      <p><a href="Step3.html" class="text-light font-weight-bold">Шаг 3. Добавление контента</a></p>
+      <ul class="list-unstyled small">
+        <li><a class="text-muted" href="Step3.html">Добавление контента</a></li>
+        <li><a class="text-muted" href="Step3.html#img">Добавление изображения</a></li>
+        <li><a class="text-muted" href="Step3.html#table">Добавление таблицы</a></li>
+        <li><a class="text-muted" href="Step3.html#video">Добавление видео</a></li>
+        <li><a class="text-muted" href="Step3.html#end">Завершение работы</a></li>
+      </ul>
+    </div>
+  </div>
 </footer>
 
 
@@ -591,15 +780,16 @@ initial-scale=1, maximum-scale=1, user-scalable=no&quot;&gt;
         integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
         crossorigin="anonymous"></script>
 
-<script src="JS.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+
         crossorigin="anonymous"></script>
 
+<script src="./js/scroll.js"></script>
 <!-- Bootstrap JS -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
+
 
 
 </body>
