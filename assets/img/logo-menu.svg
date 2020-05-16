@@ -1,0 +1,7 @@
+<svg id="logo-menu" xmlns="http://www.w3.org/2000/svg" width="96" height="88" viewBox="0 0 96 88">
+  <g id="Polygon_3" data-name="Polygon 3" transform="translate(96 88) rotate(180)" fill="#747474">
+    <path d="M 79.15457916259766 78 L 16.84542274475098 78 L 48 20.88327598571777 L 79.15457916259766 78 Z" stroke="none"/>
+    <path d="M 48 41.76651763916016 L 33.69082641601563 68 L 62.30917358398438 68 L 48 41.76651763916016 M 48 0 L 96 88 L 0 88 L 48 0 Z" stroke="none" fill="#747474"/>
+  </g>
+  <text id="B" transform="translate(28 58)" fill="#fff" font-size="82" font-family="GREY" letter-spacing="0.1em"><tspan x="0" y="0">B</tspan></text>
+</svg>
