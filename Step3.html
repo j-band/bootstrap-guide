@@ -1,54 +1,325 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Step3</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Step3</title>
 </head>
-<body>
-<nav class="navbar navbar-main navbar-expand-sm">
-    <div class="container-fluid">
-        <div class="row justify-content-sm-start">
-            <a class="navbar-expand-sm" href="#">
-                <img src="./img/logo.png" width="30" height="50" alt="">
-            </a>
+<body class="bg-grey">
+<div id="top-section"></div>
+
+
+<header class="header-transparent" id="header-main">
+  <nav class="navbar navbar-main navbar-expand-lg navbar-dark navbar-sticky sticky" id="navbar-main">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img alt="Image placeholder" height="50px" src="./assets/img/logo.png" id="navbar-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse"
+              aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navbar-collapse-overlay" id="navbar-main-collapse">
+        <div class="position-relative">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse"
+                  aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <svg class="bi bi-x-square" width="20px" height="20px" viewBox="0 0 16 16" fill="currentColor"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                    d="M14 1H2a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1V2a1 1 0 00-1-1zM2 0a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V2a2 2 0 00-2-2H2z"
+                    clip-rule="evenodd"/>
+              <path fill-rule="evenodd"
+                    d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z"
+                    clip-rule="evenodd"/>
+              <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z"
+                    clip-rule="evenodd"/>
+            </svg>
+          </button>
         </div>
+        <ul class="navbar-nav ml-lg-auto">
+          <li class="nav-item  d-block">
+            <a class="nav-link " href="index.html">Главная</a>
+          </li>
+          <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+            <a class="nav-link " href="Step1.html" aria-haspopup="true" aria-expanded="false">Шаг
+              01</a>
+            <div class="dropdown-menu dropdown-menu-md p-0">
+              <ul class="list-group p-lg-4">
+                <li class="dropdown dropdown-submenu">
+                  <a href="Step1.html" class=" list-group-item-action ">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/bootstrap.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Введение</h6>
+                        <p class="mb-0">Что такое Bootstrap</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown dropdown-submenu" data-toggle="hover">
+                  <a href="Step1.html#adaptive" class="list-group-item-action m-5  mb-0">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/adaptive.svg" class="img-fluid" style=height:20px alt="">
+                      </figure>
+                      <div class=ml-3>
+                        <h6 class="mb-0">Адаптивный дизайн</h6>
+                        <p class="mb-0">Концепция</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown dropdown-submenu" data-toggle="hover">
+                  <a href='Step1.html#advantages' class="list-group-item-action">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/advantage.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Преймущества</h6>
+                        <p class="mb-0">Топ фреймворк</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown dropdown-submenu" data-toggle="hover">
+                  <a href="Step1.html#break" class=" list-group-item-action m-5">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/breakpoint.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Breakpoint</h6>
+                        <p class="mb-0">Масштабирование блоков</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown dropdown-submenu" data-toggle="hover">
+                  <a href="Step1.html#grid" class="list-group-item-action ">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/grid.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Структура 12 столбцов</h6>
+                        <p class="mb-0">12-колоночная сетки</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+            <a class="nav-link  " href="Step2.html" role="button" aria-haspopup="true"
+               aria-expanded="false">Шаг 02</a>
+            <div class="dropdown-menu dropdown-menu-md p-0">
+              <ul class="list-group p-lg-4">
+                <li class="dropdown dropdown-submenu">
+                  <a href="Step2.html#" class=" list-group-item-action ">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/frame.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Создание каркаса</h6>
+                        <p class="mb-0">Основные блоки</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown dropdown-submenu" data-toggle="hover">
+                  <a href="Step2.html#addboot" class=" list-group-item-action m-5">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/add.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Bootstrap</h6>
+                        <p class=mb-0>Подключение, загрузка</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown dropdown-submenu" data-toggle="hover">
+                  <a href="Step2.html#layout" class=" list-group-item-action ">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/layout.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Создание макета</h6>
+                        <p class="mb-0">Базовый макета</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown dropdown-submenu" data-toggle="hover">
+                  <a href="Step2.html#nav" class=" list-group-item-action m-5">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/nav.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Навигация</h6>
+                        <p class="mb-0">Навигационная панель </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown dropdown-submenu" data-toggle="hover">
+                  <a href="Step2.html#icon" class=" list-group-item-action ">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/icon.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Font Awesome</h6>
+                        <p>Библиотека иконок</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown dropdown-submenu" data-toggle="hover">
+                  <a href="Step2.html#panel" class=" list-group-item-action">
+                    <div class="d-flex mt-2">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/panel.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Панели</h6>
+                        <p class="mb-0">Header; body; footer</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item dropdown dropdown-animate" data-toggle=hover>
+            <a class="nav-link active" href="Step3.html" role="button" aria-haspopup="true"
+               aria-expanded="false">Шаг 03</a>
+            <div class="dropdown-menu dropdown-menu-md p-0">
+              <ul class="list-group p-lg-4">
+                <li class="dropdown dropdown-submenu">
+                  <a href="Step3.html" class=" list-group-item-action">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/content.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Контент</h6>
+                        <p class="mb-0">Добавление контента</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown dropdown-submenu" data-toggle="hover">
+                  <a href="Step3.html#img" class=" list-group-item-action m-5">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/img.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Изображения</h6>
+                        <p class="mb-0">Адаптация изображения</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown dropdown-submenu" data-toggle="hover">
+                  <a href="Step3.html#table" class=" list-group-item-action">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/table.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Таблица</h6>
+                        <p class="mb-0">Адаптация таблицы</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown dropdown-submenu" data-toggle="hover">
+                  <a href="Step3.html#video" class="list-group-item-action m-5">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/video.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Видео</h6>
+                        <p class="mb-0">Адаптиция видео</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown dropdown-submenu" data-toggle="hover">
+                  <a href="Step3.html#end" class="list-group-item-action">
+                    <div class="d-flex">
+                      <figure style="width:20px">
+                        <img src="./assets/img/icons/end.svg" class="img-fluid" style="height:20px" alt="">
+                      </figure>
+                      <div class="ml-3">
+                        <h6 class="mb-0">Завершение</h6>
+                        <p class="mb-0">Выводы и итоги</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-</nav>
+  </nav>
+</header>
 
 
 <div class="number">
-    <img src="img/03.png" alt="number">
+  <img src="./assets/img/03.png" alt="number">
 </div>
-<div class="col-6 offset-3">
-    <h1 class="mt-5 pb-4 text-light">Шаг 3. Добавление контента </h1>
-</div>
-
-<div class="col-6 offset-3 text-light">
-    <p class=" headline pt-3"><b> 1. Добавление отзывчивого изображения</b></p>
-    <p>
-        Bootstrap предоставляет класс
-        <kbd>.img-fluid</kbd> для создания адаптивных изображений. Этот класс делает их адаптивными для устройств разных
-        размеров.
-    </p>
-    <p>
-        Bootstrap также предоставляет другие классы для изображений.
-    </p>
-
-    <ul class="p-2">
-        <li><kbd>.rounded-circle</kbd> - формирует изображение в круг.</li>
-        <li><kbd>.rounded float-left/right</kbd> - выравнивает изображение.</li>
-        <li><kbd>.img-thumbnail</kbd> - придает изображению округлую границу в 1 пиксель.</li>
-    </ul>
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 ">
+  <h1 class="indentation line pb-4 text-light">Шаг 3. Добавление контента </h1>
 </div>
 
-<div class="col-6 mt-5 mb-5 offset-3 code bg-secondary">
-<pre class="text-white offset-1 ">
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light ">
+  <p class=" headline pt-3"><b> 1. Добавление контента </b></p>
+  <p>
+    Контент сайта и качество наполнения сайта напрямую отвечают за успех интернет-проекта. Размещение контента играет
+    важную роль в восприятии клиентом сайта. Важно сделать все элементы адаптивными.
+  </p>
+</div>
+
+
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
+  <p id="img" class=" headline pt-3"><b> 1. Добавление отзывчивого изображения</b></p>
+  <p>
+    Bootstrap предоставляет класс
+    <kbd>.img-fluid</kbd> для создания адаптивных изображений. Этот класс делает их адаптивными для устройств разных
+    размеров.
+  </p>
+  <p>
+    Bootstrap также предоставляет другие классы для изображений.
+  </p>
+
+  <ul class="p-2">
+    <li><kbd>.rounded-circle</kbd> - формирует изображение в круг.</li>
+    <li><kbd>.rounded float-left/right</kbd> - выравнивает изображение.</li>
+    <li><kbd>.img-thumbnail</kbd> - придает изображению округлую границу в 1 пиксель.</li>
+  </ul>
+</div>
+
+<div class="col-lg-6 mt-5 mb-5 offset-lg-3 col-md-12 col-sm-2 offset-sm-0 offset-md-0 offset-lg-3 code bg-secondary">
+<pre class="text-white offset-lg-1  offset-sm-0 offset-md-0">
     <code>
 &lt;!-- .img-fluid--&gt;
 &lt;img src=&quot;#&quot; class=&quot;img-fluid&quot; alt=&quot;image&quot;&gt;
@@ -66,41 +337,40 @@
 </pre>
 </div>
 
-<div class="col-8 mb-5 offset-2">
-    <p class="codepen" data-height="350" data-theme-id="dark" data-default-tab="html,result" data-user="yuliakalina"
-       data-slug-hash="ZEbKydz"
-       style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
-       data-pen-title="ZEbKydz">
+<div class="mb-2 mt-5 col-lg-8 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-2 text-light">
+  <p class="codepen" data-height="350" data-theme-id="dark" data-default-tab="html,result" data-user="yuliakalina"
+     data-slug-hash="ZEbKydz"
+     style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+     data-pen-title="ZEbKydz">
   <span>See the Pen <a href="https://codepen.io/yuliakalina/pen/ZEbKydz">
   ZEbKydz</a> by Julia Kalinichenko (<a href="https://codepen.io/yuliakalina">@yuliakalina</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
-    </p>
-    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+  </p>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 </div>
 
 
-<div class="col-6 offset-3 text-light">
-    <p class=" headline pt-3"><b> 2. Добавление отзывчивой таблицы</b></p>
-    <p>
-        Таблицы используются для отображения структурированных данных в виде строк и столбцов. Boostrap предоставляет
-        класс <kbd>.table</kbd> для создания адаптивной таблицы. Класс <kbd>.table</kbd> определяет расположение таблицы
-        и ставит границу.
-    </p>
-    <p>
-        Bootstrap также предоставляет другие классы для таблиц.
-    </p>
-    <ul class="p-2">
-        <li><kbd>.table-responsive{-sm-md-lg-xl}</kbd> - создает адаптивную таблицу.</li>
-        <li><kbd>.table-striped</kbd> - добавляет "зебру" в таблицу.</li>
-        <li><kbd>.table-hover</kbd> - добавляет эффект наведения (серый цвет фона) на строки таблицы.</li>
-        <li><kbd>.table-dark</kbd> - добавляет в таблицу черный фон.</li>
-        <li><kbd>.table-borderless</kbd> - удаляет границы из таблицы.</li>
-    </ul>
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
+  <p id="table" class=" headline pt-3"><b> 2. Добавление отзывчивой таблицы</b></p>
+  <p>
+    Таблицы используются для отображения структурированных данных в виде строк и столбцов. Bootstrap предоставляет
+    класс <kbd>.table</kbd> для создания адаптивной таблицы.
+  </p>
+  <p>
+    Bootstrap также предоставляет другие классы для таблиц.
+  </p>
+  <ul class="p-2">
+    <li><kbd>.table-responsive{-sm-md-lg-xl}</kbd> - создает адаптивную таблицу.</li>
+    <li><kbd>.table-striped</kbd> - добавляет "зебру" в таблицу.</li>
+    <li><kbd>.table-hover</kbd> - добавляет эффект наведения (серый цвет фона) на строки таблицы.</li>
+    <li><kbd>.table-dark</kbd> - добавляет в таблицу черный фон.</li>
+    <li><kbd>.table-borderless</kbd> - удаляет границы из таблицы.</li>
+  </ul>
 </div>
 
 
-<div class="col-6 mt-5 mb-5 offset-3 code bg-secondary">
-<pre class="text-white offset-1 ">
+<div class="col-lg-6 mt-5 mb-5 offset-lg-3 col-md-12 col-sm-2 offset-sm-0 offset-md-0 offset-lg-3 code bg-secondary">
+<pre class="text-white offset-lg-1  offset-sm-0 offset-md-0">
     <code>
 &lt;div class=&quot;container&quot;&gt;
   &lt;h2&gt;Таблица&lt;/h2&gt;
@@ -137,47 +407,45 @@
 </div>
 
 
-<div class="col-8 mb-5 offset-2">
-    <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="yuliakalina"
-       data-slug-hash="WNQjOJK"
-       style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
-       data-pen-title="WNQjOJK">
+<div class="mb-2 mt-5 col-lg-8 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-2 text-light">
+  <p class="codepen" data-height="350" data-theme-id="dark" data-default-tab="html,result" data-user="yuliakalina"
+     data-slug-hash="WNQjOJK"
+     style="height: 350px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+     data-pen-title="WNQjOJK">
   <span>See the Pen <a href="https://codepen.io/yuliakalina/pen/WNQjOJK">
   WNQjOJK</a> by Julia Kalinichenko (<a href="https://codepen.io/yuliakalina">@yuliakalina</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
-    </p>
-    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+  </p>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 </div>
 
 
-<div class="col-6 offset-3 text-light">
-    <p class=" headline pt-3"><b> 3. Добавление отзывчивого видео</b></p>
-    <p>
-
-        Bootstrap предоставляет классы, чтобы сделать вставки видео или слайд-шоу на основе ширины родительского
-        элемента, создавая внутреннее соотношение, которое масштабируется на любом устройстве. </p>
-    <p>
-        Иногда нам нужно отображать сторонние приложения на нашей веб-странице. Таким образом, мы можем использовать тег
-        <kbd>&lt;embed&gt;</kbd> ,
-        <kbd>&lt;iframe&gt;</kbd>,
-        <kbd>&lt;video&gt;</kbd> или
-        <kbd>&lt;object&gt;</kbd> для встраивания этих сторонних приложений.ние таблицы и ставит границу.
-    </p>
-    <p>
-        Bootstrap предоставляет класс <kbd>.embed-responsive </kbd> для создания адаптивного встраивания. Мы также можем
-        установить соотношение сторон.
-    </p>
-    <ul class="p-2">
-        <li><kbd> .embed-responseive-16by9</kbd> - Отображает код для вставки или видео в соотношении ширины и высоты
-            16:9.
-        </li>
-        <li><kbd>.embed-responseive-4by3</kbd> - Показывать код для вставки или видео в соотношении ширины и высоты 4:3
-        </li>
-    </ul>
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
+  <p id="video" class=" headline pt-3"><b> 3. Добавление отзывчивого видео</b></p>
+  <p>
+    Bootstrap предоставляет классы, чтобы сделать вставки видео или слайд-шоу на основе ширины родительского
+    элемента, создавая внутреннее соотношение, которое масштабируется на любом устройстве. </p>
+  <p>
+    Иногда нам нужно отображать сторонние элементы на веб-странице. Таким образом, мы можем использовать теги
+    <kbd>&lt;embed&gt;</kbd> ,
+    <kbd>&lt;iframe&gt;</kbd>,
+    <kbd>&lt;video&gt;</kbd>
+  </p>
+  <p>
+    Bootstrap предоставляет класс <kbd>.embed-responsive </kbd> для создания адаптивного встраивания. Мы также можем
+    установить соотношение сторон.
+  </p>
+  <ul class="p-2">
+    <li><kbd> .embed-responseive-16by9</kbd> - Отображает код для вставки или видео в соотношении ширины и высоты
+      16:9.
+    </li>
+    <li><kbd>.embed-responseive-4by3</kbd> - Показывать код для вставки или видео в соотношении ширины и высоты 4:3
+    </li>
+  </ul>
 </div>
 
-<div class="col-6 mt-5 mb-5 offset-3 code bg-secondary">
-<pre class="text-white offset-1 ">
+<div class="col-lg-6 mt-5 mb-5 offset-lg-3 col-md-12 col-sm-2 offset-sm-0 offset-md-0 offset-lg-3 code bg-secondary">
+<pre class="text-white offset-lg-1  offset-sm-0 offset-md-0">
     <code>
   &lt;div class=&quot;embed-responsive embed-responsive-21by9&quot;&gt;
   &lt;iframe class=&quot;embed-responsive-item&quot;src=&quot;https://www.youtube.com/embed/2JMMnNOhDoc&quot;
@@ -189,81 +457,110 @@
 </div>
 
 
-<div class="col-6 offset-3 text-light">
-    <p>
-        Таким образом, у нас получилось встроенное видео с YouTube для компьютеров, планшетов и мобильных
-        устройств.
-    </p>
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
+  <p>
+    Таким образом, у нас получилось встроенное видео с YouTube для компьютеров, планшетов и мобильных
+    устройств.
+  </p>
 </div>
 
 
+<div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
+  <p id="end" class="headline pt-3"><b> 4. Завершение работы</b></p>
+  <p>
+    Мы использовали несколько компонентов для создания адаптивного веб-сайта. С помощью таких
+    компонентов легко создавать адаптивные сайты, которые сейчас пользуються огромным спросом.</p>
+  <p>
+    Так же у Bootstrap есть множество готовых тем которые вы можете использовать для ваших сайтов.
+    Каждая тема имеет свой собственный инструментарий с участием
+    Bootstrap, совершенно новых компонентов и плагинов.
+    Миллионы сайтов в интернете строятся на Bootstrap. Вы можете посмотреть некоторые примеры
+    <a class="text-white font-weight-bold" href="https://getbootstrap.ru/docs/4.3/examples/">здесь</a>. <br>Вдохновитесь
+    и создайте потрясающий сайт для Вас лично или ваших клиентов.
+    Желаем Вам удачи и успехов в изучении!
+  </p>
+  <p>
+    <b>P.S.</b> этот сайт тоже, написан на Bootstrap, если Вам интересно вы можете посмотреть исходный код в репозитории
+    <a class="text-white font-weight-bold"
+       href="https://github.com/j-band/bootstrap-guide">Github.</a>
 
-
-<div class="col-6 offset-3 text-light">
-    <p class="headline pt-3"><b> 4. Завершение работы</b></p>
-    <p>
-        Мы использовали несколько компонентов для создания адаптивного веб-сайта. С помощью таких
-        компонентов легко создавать адаптивные сайты, которые сейчас пользуються огромным спросом.</p>
-    <p>
-        Так же у Bootstrap есть множество готовых тем которые вы можете использовать для ваших сайтов.
-        Каждая тема имеет свой собственный инструментарий с участием
-        Bootstrap, совершенно новых компонентов и плагинов.
-        Миллионы сайтов в интернете строятся на Bootstrap. Вы можете посмотреть некоторые примеры
-        <a class="text-white font-weight-bold" href="https://getbootstrap.ru/docs/4.3/examples/">здесь</a>. <br>Вдохновитесь
-        и создайте потрясающий сайт для Вас лично или ваших клиентов.
-        Желаем Вам удачи и успехов в изучении!
-    </p>
-    <p>
-        <b>P.S.</b> этот сайт тоже, написан на Bootstrap, если Вам интересно вы можете посмотреть исходный код в репозитории <a class="text-white font-weight-bold"
-            href="https://github.com/j-band/bootstrap-guide">Github.</a>
-
-    </p>
+  </p>
 </div>
 
-<a href="https://github.com/j-band/bootstrap-guide">
-    <button type="button" class=" mt-5 mb-5 col-lg-2 btn btn-outline-light offset-7 ">
-        Посмотреть работу
-    </button>
+<a href="index.html">
+  <button type="button" class=" mt-5 mb-5 col-lg-2 btn btn-outline-light offset-sm-0 offset-md-0 offset-lg-7 ">
+    Вернуться на главную
+  </button>
 </a>
 
+<div class="button-top">
+  <a href="#top-section">
+    <button type="button" class="btn btn-lg btn-dark rounded-circle shadow-lg">
+      <i class="fas fa-angle-up"></i>
+    </button>
+  </a>
+</div>
 
 <footer class="container py-5">
-    <div class="row">
-        <div class="col-12 col-md">
-            <a href="index.html"> <img class="d-block mb-2" src="img/logo-muted.png" width="10%" alt="logo"></a>
-            <small class="d-block text-muted">© Юлия Калиниченко</small>
-            <small class="d-block ml-3 text-muted">2020</small>
-        </div>
-        <div class="col-6 col-md">
-            <p><a href="Step1.html" class="text-light font-weight-bold">Шаг 1. Введение в Bootstrap</a></p>
-            <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="#">Адаптивный дизайн</a></li>
-                <li><a class="text-muted" href="#">Преймущества Bootstrap</a></li>
-                <li><a class="text-muted" href="#">Визуальный Breakpoints</a></li>
-                <li><a class="text-muted" href="#">Структура 12 столбцов</a></li>
-            </ul>
-        </div>
-        <div class="col-6 col-md">
-            <p><a href="Step2.html" class="text-light font-weight-bold">Шаг 2. Создание каркаса</a></p>
-            <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="#">Добавление Bootstrap в проект</a></li>
-                <li><a class="text-muted" href="#">Создание базового макета</a></li>
-                <li><a class="text-muted" href="#">Добавление навигации</a></li>
-                <li><a class="text-muted" href="#">Добавление Glyphicons</a></li>
-                <li><a class="text-muted" href="#">Добавление панели</a></li>
-                <li><a class="text-muted" href="#">Добавление Jumbotron</a></li>
-            </ul>
-        </div>
-        <div class="col-6 col-md">
-            <p><a href="#" class="text-light font-weight-bold">Шаг 3. Добавление контента</a></p>
-            <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="#">Добавление изображения</a></li>
-                <li><a class="text-muted" href="#">Добавление таблицы</a></li>
-                <li><a class="text-muted" href="#">Добавление видео</a></li>
-                <li><a class="text-muted" href="#">Завершение работы</a></li>
-            </ul>
-        </div>
+  <div class="row">
+    <div class="col-12 col-md col-sm">
+      <a href="index.html"> <img class="d-block mb-2 " src="./assets/img/logo-muted.png" width="10%" alt="logo"></a>
+      <a class="text-muted" href="https://github.com/j-band/bootstrap-guide" target="_blank">
+        <small class="d-block">© Юлия Калиниченко</small>
+      </a>
+      <small class="d-block ml-3 text-muted mb-4">2020</small>
     </div>
+    <div class="col-6 col-md col-sm">
+      <p><a href="Step1.html" class="text-light font-weight-bold">Шаг 1. Введение в Bootstrap</a></p>
+      <ul class="list-unstyled small">
+        <li><a class="text-muted " href="Step1.html#introduction">Введение в Bootstrap</a></li>
+        <li><a class="text-muted" href="Step1.html#adaptive">Адаптивный дизайн</a></li>
+        <li><a class="text-muted" href="Step1.html#advantages">Преймущества Bootstrap</a></li>
+        <li><a class="text-muted" href="Step1.html#break">Визуальный Breakpoints</a></li>
+        <li><a class="text-muted" href="Step1.html#grid">Структура 12 столбцов</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md col-sm">
+      <p><a href="Step2.html" class="text-light font-weight-bold">Шаг 2. Создание каркаса</a></p>
+      <ul class="list-unstyled small">
+        <li><a class="text-muted" href="Step2.html#addboot">Добавление Bootstrap</a></li>
+        <li><a class="text-muted" href="Step2.html#layout">Создание базового макета</a></li>
+        <li><a class="text-muted" href="Step2.html#nav">Добавление навигации</a></li>
+        <li><a class="text-muted" href="Step2.html#icon">Добавление Font Awesome</a></li>
+        <li><a class="text-muted" href="Step2.html#panel">Добавление панели</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md col-sm">
+      <p><a href="Step3.html" class="text-light font-weight-bold">Шаг 3. Добавление контента</a></p>
+      <ul class="list-unstyled small">
+        <li><a class="text-muted" href="Step3.html">Добавление контента</a></li>
+        <li><a class="text-muted" href="Step3.html#img">Добавление изображения</a></li>
+        <li><a class="text-muted" href="Step3.html#table">Добавление таблицы</a></li>
+        <li><a class="text-muted" href="Step3.html#video">Добавление видео</a></li>
+        <li><a class="text-muted" href="Step3.html#end">Завершение работы</a></li>
+      </ul>
+    </div>
+  </div>
 </footer>
+
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+
+        crossorigin="anonymous"></script>
+
+<script src="./js/scroll.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+
 </body>
 </html>

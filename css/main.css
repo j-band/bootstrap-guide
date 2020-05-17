@@ -15,12 +15,17 @@
     font-style: normal;
 }
 
-a, a:hover {
-    text-decoration: none;
+.bg-custom-black{
+    background-color: black !important;
+}
+
+.bg-grey{
+    background-color: #242424 !important;
 }
 
 .background {
-    height: 100vh;
+
+    height: 110vh;
     background-color: #929292;
     background-image: -webkit-linear-gradient(180deg, #929292 25%, #000000 100%);
     background-image: -moz-linear-gradient(180deg, #929292 25%, #000000 100%);
@@ -48,26 +53,26 @@ a, a:hover {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 44%;
+    top: 45%;
     height: 400px;
     width: auto;
 }
 
 
 body {
-    background-color: black !important;
+
     overflow-x: hidden;
 }
 
 
 
-/* TODO: rename class size */
+
 .size{
      height: 10vh;
 }
 
-.size {
-    font-size: 12pt;
+.size-font {
+    font-size: 11pt;
 }
 
 .headline {
@@ -75,14 +80,11 @@ body {
 }
 
 
-a:hover {
-    color: red;
-}
 
-
-.text-bottom{
+.text-bottom {
     position: absolute;
     bottom: 20px;
+}
 
 .step {
     width: 300px;
@@ -139,7 +141,7 @@ a:hover {
     min-height: 100vh;
     border-radius: 0;
     color: #333;
-    background: rgba(255, 255, 255, 0.97);
+    background: rgba(255, 255, 255, 1);
     overflow:auto;
 }
 
@@ -150,7 +152,7 @@ a:hover {
 
 @media (max-width: 480px){
     .fullscreen .modal-body ul {
-        padding: 30px 0 0 0;
+        padding: 0 0 0 0;
         overflow: auto;
     }
 
@@ -160,8 +162,6 @@ a:hover {
 
     .fullscreen .modal-body a {
         color: #333;
-        text-transform: uppercase;
-        font-weight: 700;
     }
 }
 
@@ -182,3 +182,53 @@ a:hover {
     padding-right: 0;
     margin: 50px 20px 20px;
 }
+
+.number img {
+    position: fixed;
+    left: 4%;
+    transform: translate(-20%, -20%);
+    top: 15%;
+    width: 520px;
+    height: 500px;
+}
+
+
+kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    color: #333;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+}
+
+.code {
+    font-size: 11pt;
+    font-family: courier, monospace;
+    border-radius: 3px;
+    border-left: solid 5px white;
+}
+
+.headline {
+    font-size: 20pt;
+}
+
+.modal-backdrop.fade.show{
+    display: none;
+}
+
+.menu-fix{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.line {
+    border-bottom: 2px solid white;
+}
+
+.top{
+    top: 10%;
+}
+
