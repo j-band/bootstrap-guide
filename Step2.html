@@ -15,7 +15,6 @@
 <div id="top-section"></div>
 
 
-
 <header class="header-transparent" id="header-main">
   <nav class="navbar navbar-main navbar-expand-lg navbar-dark navbar-sticky sticky" id="navbar-main">
     <div class="container">
@@ -295,12 +294,12 @@
 <div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
   <p id="frame" class="headline pt-3"><b>1. Создание каркаса</b></p>
   <p>
-    Каркасом - это основные блоки, которые разделяют контент сайта друг от друга. Самый
-    простой и базовый пример: шапка – блок слева – блок справа и подвал (футер). В этих блоках в свою очередь может быть
-    очень
-    много других, вложенных элементов, но они уже являются дополнительной разметкой, которая добавляется на
+    Каркас сайта представляет собой основные блоки, которые разделяют контент сайта друг от друга. Самая распространенная структура -
+    шапка – основные блоки и подвал (футер). В этих блоках может быть размещено
+    очень много вложенных элементов. Но они будут считаться уже дополнительной разметкой, которая будет
+    добавлена на
     следующем
-    этапе.
+    шаге.
   </p>
 </div>
 
@@ -311,14 +310,15 @@
     ваш выбор.
   </p>
   <p>
-    Если вы хотите скачать и добавить Bootstrap самостоятельно, вы можете перейдите на <a
+    Если у вас есть желание загрузить и установить Bootstrap самостоятельно, вы можете перейдите на <a
       class="text-white font-weight-bold"
       href="https://getbootstrap.com/docs/4.4/getting-started/introduction/"> официальный сайт Bootstrap</a>
     и скачать его там.
   </p>
   <p>
-    Если вы не хотите загружать Bootstrap самостоятельно, вы можете включить его из CDN (Content
-    Delivery Network). MaxCDN обеспечивает поддержку CDN для CSS и JavaScript Bootstrap. Вы также можете включить
+    Если же вы не хотите скачивать Bootstrap, вы можете подключить его из CDN (Content
+    Delivery Network). MaxCDN обеспечивает поддержку CDN для CSS и JavaScript Bootstrap. Если вы хотите, вы так же
+    можете подключить
     jQuery.
   </p>
 </div>
@@ -357,16 +357,16 @@ crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 <div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
   <p id="layout" class="headline pt-3"><b> 3. Создание базового макета</b></p>
   <p>
-    В первую очередь, нам необходимо создать новую HTML-страницу <kbd>index.html</kbd>, после создания добавляем
-    следующий код, это как раз и есть базовая структура.
+    Разумеется, нам необходимо создать новую HTML-страницу <kbd>index.html</kbd>, после создание страницы мы можем
+    добавить код, который находиться ниже. Это и есть наша базовая структура о которой было сказано ранее.
   </p>
   <p>
-    Так же, не забудьте подключить <kbd>bootstrap.css</kbd> в <kbd>head</kbd> страницы.
+    Но прежде, нам необходимо подключить <kbd>bootstrap.css</kbd> в <kbd>head</kbd> страницы.
   </p>
   <p>
     А так же добавить ссылки на <kbd>jQuery-3.5.0.js</kbd> и <kbd>bootstrap.js</kbd> внизу тега body. Обычно
     загружают скрипт внизу страницы,
-    чтобы улучшить время загрузки страницы, так как будет лучше, если HTML и CSS загрузяться первыми.
+    чтобы улучшить время загрузки страницы.
   </p>
 
 </div>
@@ -439,12 +439,12 @@ crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
   <p>
     Внутри класса <kbd>.row</kbd> добавили 3 класса столбцов для навигации и всего контента.
     Также определены классы <kbd>.col-3, col-6, col-3</kbd> соответственно. Эти классы разделят общую
-    структуру
-    столбцов в соотношении 3:6:3.
+    структуру столбцов в соотношении 3:6:3.
   </p>
   <p>
-    Таким образом, навигация займет первые 3 столбца, область основного контента займет следующие 6 столбцов,
-    а остальное содержимое займет последние 3 столбца.
+    Подобным способом, навигация заберет первоначальные 3 столбца, область главного контента заберет следующие 6
+    столбцов,
+    и прочее содержимое заберет последние 3 столбца.
   </p>
 </div>
 
@@ -452,10 +452,10 @@ crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 <div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
   <p id="nav" class="headline pt-3"><b> 4. Добавление навигации</b></p>
   <p>
-    Bootstrap предоставляет компонент <kbd>Navbar</kbd> для отображения элемента навигации. Компонент навигационной
-    панели
-    Bootstrap содержит кнопку-переключатель (3 маленькие горизонтальные линии справа) для отображения и скрытия
-    элементов навигации.
+    Bootstrap дает элемент <kbd>Navbar</kbd> с целью отражения компонента навигации. Элемент навигационной
+    панели Bootstrap имеет кнопку-переключатель (3 небольшие горизонтальные линии с правой стороны) с целью отображения
+    также скрытия
+    компонентов навигации.
   </p>
 </div>
 
@@ -533,10 +533,12 @@ crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
     Bootstrap, а позже был включен в BootstrapCDN.
   </p>
   <p>
-    После того, как вы приступите к работе, вы можете разместить иконки Font Awesome практически в любом месте, используя префикс <kbd>fa</kbd> и имя иконки.
-    Font Awesome предназначен для использования со встроенными элементами (для краткости используться тег
-    <kbd>&lt;i&gt;</kbd> (i -icon), но
-    использование <kbd>&lt;span&gt;</kbd> более семантически правильно).
+    Уже после того, равно как вам приступите к работе, вы сможете расположить иконки Font Awesome почти в любом месте,
+    применяя префикс <kbd>fa</kbd> и также имя иконки.
+    Font Awesome специализирован с целью применения с интегрированными компонентами (с целью лаконичности используться
+    тег
+    <kbd>&lt;i&gt;</kbd> (i -icon), однако
+    применение <kbd>&lt;span&gt;</kbd> наиболее семантически грамотно).
   </p>
 </div>
 
@@ -560,8 +562,8 @@ crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 
 <div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
   <p>
-    Если вы измените размер шрифта контейнера иконки, иконка станет больше. То же самое касается цвета, тени и всего,
-    что наследуется с помощью CSS.
+    В случае если вам поменяете размер шрифта контейнера иконки, икона также станет больше. То же самое касается цвета,
+    тени и всего, то что наследуется поддержкой CSS.
   </p>
 </div>
 
@@ -572,24 +574,27 @@ crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 
   <ul class="p-2">
     <li>
-      Чтобы произвольно вращать и переворачивать значки, используйте классы <kbd>fa-rotate- *</kbd> и <kbd>fa-flip- *</kbd>.
+      Чтобы свободно вращать и переворачивать значки, применяются классы <kbd>fa-rotate- *</kbd> и <kbd>fa-flip-
+      *</kbd>.
     </li>
     <li>
-      Используйте класс <kbd>fa-spin</kbd>, чтобы повернуть любой значок, и используйте <kbd>fa-pulse</kbd>, чтобы он
+      Класс <kbd>fa-spin</kbd> применяеться, чтобы повернуть любой значок, и <kbd>fa-pulse</kbd> - чтобы он
       вращался с 8 шагами.
-      Хорошо работает с <kbd>fa-spinner, fa-refresh и fa-cog.</kbd>
+      Так же можно использовать <kbd>fa-spinner, fa-refresh и fa-cog.</kbd>
     </li>
     <li>
-      Используйте <kbd>fa-border</kbd> и <kbd>fa-pull-right</kbd> или <kbd>fa-pull-left</kbd> для простых цитат или
+      Классы <kbd>fa-border</kbd> и <kbd>fa-pull-right</kbd> или <kbd>fa-pull-left</kbd> применяються для простых цитат или
       значков статей.
     </li>
     <li>
-      Используйте <kbd>fa-ul</kbd> и <kbd>fa-li</kbd> для простой замены маркеров по умолчанию в неупорядоченных
+      Классы <kbd>fa-ul</kbd> и <kbd>fa-li</kbd> применяються для простой замены маркеров по умолчанию в неупорядоченных
       списках.
     </li>
     <li>
-      Используйте <kbd>fa-fw</kbd>, чтобы установить значки с фиксированной шириной. Отлично подходит для использования при разной
-    ширине иконки. Особенно полезно в таких вещах, как навигационные списки и группы списков.
+      Класс <kbd>fa-fw</kbd>применяеться, чтобы установить значки с фиксированной шириной.
+      Прекрасно подойдет с целью применения
+      при разной
+      ширине иконки. В Особенности целесообразно в таких вещах, как навигационные списки и группы списков.
     </li>
   </ul>
 </div>
@@ -615,22 +620,23 @@ crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 </div>
 
 <div class="container my-5 col-lg-12 row offset-lg-3">
-      <div class="list-group col-lg-2">
-        <a class="list-group-item text-dark" href="#"><i class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp; О нас</a>
-        <a class="list-group-item text-dark" href="#"><i class="fa fa-download fa-fw" aria-hidden="true">
-        </i> Скачать</a>
-      </div>
-      <div class="fa-3x icons ">
-        <i class="fas fa-spinner fa-pulse"></i>
-        <i class="fas fa-cog fa-spin"></i>
-        <i class="fas fa-spinner fa-spin"></i>
-      </div>
+  <div class="list-group col-lg-2">
+    <a class="list-group-item text-dark" href="#"><i class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp; О нас</a>
+    <a class="list-group-item text-dark" href="#"><i class="fa fa-download fa-fw" aria-hidden="true">
+    </i> Скачать</a>
+  </div>
+  <div class="fa-3x icons ">
+    <i class="fas fa-spinner fa-pulse"></i>
+    <i class="fas fa-cog fa-spin"></i>
+    <i class="fas fa-spinner fa-spin"></i>
+  </div>
 </div>
 <div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
   <p id="panel" class="headline pt-3"><b> 5. Добавление панели</b></p>
   <p>
-    Панели являются элементами контейнера и используются для хранения другого содержимого. Иногда нам нужно
-    отобразить некоторый контент внутри окна, тогда мы можем использовать панели. Bootstrap предоставляет отзывчивые
+    Панели являются элементами контейнера и используются для хранения другого содержимого.
+    В некоторых случаях нам необходимо
+    показать определенный контент внутри окна, в этом случае мы можем применять панели. Bootstrap предоставляет отзывчивые
     панели.
   </p>
   <p>
@@ -690,7 +696,7 @@ crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 
 <div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
   <p>
-    Чтобы раскрасить панель, используйте контекстные классы <kbd>.panel-default, .panel-primary, .panel-success,
+    Чтобы добавить панели цвет, используються контекстные классы <kbd>.panel-default, .panel-primary, .panel-success,
     .panel-info, .panel-warning или .panel-danger</kbd>
   </p>
 </div>
@@ -706,7 +712,6 @@ crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
   </p>
   <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 </div>
-
 
 
 <div class="col-lg-6 col-md-12 col-sm-12 offset-sm-0 offset-md-0 offset-lg-3 text-light">
@@ -789,7 +794,6 @@ crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
-
 
 
 </body>
