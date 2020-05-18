@@ -378,7 +378,7 @@ crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
      &lt;head&gt;
-         &lt;title&gt;Home&lt;/title&gt;
+         &lt;title&gt;&lt;/title&gt;
          &lt;meta charset=&quot;utf-8&quot; /&gt;
          &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
          initial-scale=1, maximum-scale=1, user-scalable=no&quot;&gt;
@@ -393,14 +393,14 @@ crossorigin=&quot;anonymous&quot;&gt;
     &lt;/header&gt;
     &lt;section class=&quot;container&quot; &gt;
         &lt;div class=&quot;row&quot;&gt;
-          &lt;div class=&quot;col-3 Nav&quot;&gt;
-          Навигация
+          &lt;div class=&quot;col-3&quot;&gt;
+          Навигация слева
           &lt;/div&gt;
-          &lt;div class=&quot;col-6 content&quot;&gt;
-          Область содержимого
-          &lt;/div&gt;
-          &lt;div class=&quot;col-3 reletedContent&quot;&gt;
+          &lt;div class=&quot;col-6&quot;&gt;
           Контент
+          &lt;/div&gt;
+          &lt;div class=&quot;col-3&quot;&gt;
+          Блок справа
           &lt;/div&gt;
         &lt;/div&gt;
     &lt;/section&gt;
@@ -463,16 +463,24 @@ crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 <div class="col-lg-6 mt-5 mb-5 offset-lg-3 col-md-12 col-sm-2 offset-sm-0 offset-md-0 offset-lg-3 code bg-secondary">
 <pre class="text-white offset-lg-1  offset-sm-0 offset-md-0 ">
     <code>
-&lt;nav class=&quot;navbar navbar-expand-lg navbar-light bg-light&quot;&gt;
-  &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Navbar&lt;/a&gt;
-  &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot;data-target=&quot;#navbarNav&quot;
-        aria-controls=&quot;navbarNav&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
-    &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-dark&quot;&gt;
+  &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Меню&lt;/a&gt;
+  &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot;
+      data-toggle=&quot;collapse&quot;data-target=&quot;#navbarNav&quot;
+        aria-controls=&quot;navbarNav&quot; aria-expanded=&quot;false&quot;
+      aria-label=&quot;Toggle navigation&quot;&gt;
+    &lt;svg class=&quot;bi bi-list&quot; width=&quot;2em&quot; height=&quot;2em&quot; viewBox=&quot;0 0 16 16&quot;
+      fill=&quot;white&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+  &lt;path fill-rule=&quot;evenodd&quot;
+      d=&quot;M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013
+      7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z&quot;
+      clip-rule=&quot;evenodd&quot;/&gt;
+&lt;/svg&gt;
   &lt;/button&gt;
   &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarNav&quot;&gt;
     &lt;ul class=&quot;navbar-nav&quot;&gt;
       &lt;li class=&quot;nav-item active&quot;&gt;
-        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Домой&lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Домой&lt;/a&gt;
       &lt;/li&gt;
       &lt;li class=&quot;nav-item&quot;&gt;
         &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;О нас&lt;/a&gt;
@@ -486,7 +494,7 @@ crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
     &lt;/ul&gt;
   &lt;/div&gt;
 &lt;/nav&gt;
-</code>
+
 </pre>
 </div>
 
