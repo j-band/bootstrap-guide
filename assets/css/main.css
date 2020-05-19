@@ -304,9 +304,6 @@ kbd {
     font-size: 11pt;
 }
 
-.headline {
-    font-size: 24pt;
-}
 
 .text-bottom {
     position: absolute;
@@ -364,6 +361,7 @@ kbd {
 
 .headline {
     font-size: 20pt;
+    outline: none;
 }
 
 
